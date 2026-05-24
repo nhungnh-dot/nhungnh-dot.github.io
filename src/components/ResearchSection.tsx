@@ -104,7 +104,7 @@ export default function ResearchSection() {
                   {/* DOI Link block if available */}
                   {pub.doi && (
                     <div className="pt-2 border-t border-[#e2e1d8]/40 flex items-center justify-between text-[10px] font-mono text-[#8a8c7a]">
-                      <span>Digital Object Identifier</span>
+                      <span>DOI</span>
                       <a
                         href={`https://doi.org/${pub.doi}`}
                         target="_blank"
