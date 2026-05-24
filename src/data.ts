@@ -80,8 +80,8 @@ export const TALKS: Talk[] = [
   {
     id: "talk-2",
     title: "Inverse Scattering and Computational Wave Imaging",
-    event: "Department of Mathematics Recruiting Event, Kansas State University",
-    location: "Manhattan, Kansas, USA",
+    event: "Department of Mathematics Recruiting Event",
+    location: "Kansas State University, Kansas, USA",
     dateRange: "Mar 6 - 9, 2025",
     type: "invited"
   },
@@ -98,7 +98,7 @@ export const TALKS: Talk[] = [
     id: "talk-4",
     title: "Recent Advances in Source Reconstruction and Machine Learning for PDEs",
     event: "MATH FOR ALL conference 2026",
-    location: "Virtual Event",
+    location: "Virtual",
     dateRange: "Apr 10 - 11, 2026",
     type: "contributed"
   },
@@ -106,7 +106,7 @@ export const TALKS: Talk[] = [
     id: "talk-5",
     title: "Spectral Priors for Solving Wave Inversion Schemes",
     event: "The Fifteenth Ohio River Analysis Meeting",
-    location: "University of Kentucky, Lexington, KY, USA",
+    location: "University of Kentucky, Kentucky, USA",
     dateRange: "Mar 21 - 22, 2026",
     type: "contributed"
   },
@@ -114,7 +114,7 @@ export const TALKS: Talk[] = [
     id: "talk-6",
     title: "Identifying Perturbed Radiators in Grated Structural Arrays",
     event: "The 21st Prairie Analysis Seminar",
-    location: "Kansas State University, Manhattan, KS, USA",
+    location: "Kansas State University, Kansas, USA",
     dateRange: "Nov 7 - 8, 2025",
     type: "contributed"
   },
@@ -122,7 +122,7 @@ export const TALKS: Talk[] = [
     id: "talk-7",
     title: "Inexact Spectral Backpropagation for Multi-frequency Active Arrays",
     event: "The 3rd UNC Greensboro Virtual PDE Conference",
-    location: "Virtual Event",
+    location: "Virtual",
     dateRange: "Oct 10 - 12, 2025",
     type: "contributed"
   },
@@ -130,7 +130,7 @@ export const TALKS: Talk[] = [
     id: "talk-8",
     title: "Imaging Local Violations in Lattice Multi-sources",
     event: "The 10th Annual Meeting of SIAM Central States Section",
-    location: "University of Arkansas, Fayetteville, AR, USA",
+    location: "University of Arkansas, Arkansas, USA",
     dateRange: "Oct 11 - 12, 2025",
     type: "contributed"
   },
@@ -138,7 +138,7 @@ export const TALKS: Talk[] = [
     id: "talk-9",
     title: "Inverse Scattering Theory: Analytical Formulations & Numerical Implementations",
     event: "The 3rd International Mathematics and Statistics Student Research Symposium",
-    location: "Virtual Event",
+    location: "Virtual",
     dateRange: "Apr 12, 2025",
     type: "contributed"
   },
@@ -146,7 +146,7 @@ export const TALKS: Talk[] = [
     id: "talk-10",
     title: "Direct Reconstruction Methods for Non-destructive Defect Scanning",
     event: "AMS Sectional Meeting Program - 2025 Spring Central Sectional Meeting",
-    location: "University of Kansas, Lawrence, KS, USA",
+    location: "University of Kansas, Kansas, USA",
     dateRange: "Mar 29 - 30, 2025",
     type: "contributed"
   },
@@ -155,7 +155,7 @@ export const TALKS: Talk[] = [
     id: "talk-11",
     title: "Deep Neural Network Priors for Complex Wave Helmholtz Systems",
     event: "2025 K-State AI Symposium: Humans and the Machine",
-    location: "Kansas State University, Manhattan, KS, USA",
+    location: "Kansas State University, Kansas, USA",
     dateRange: "Oct 14 - 16, 2025",
     type: "poster"
   },
@@ -163,7 +163,7 @@ export const TALKS: Talk[] = [
     id: "talk-12",
     title: "Biharmonic Inverse Scattering and Waveguide Perturbations",
     event: "Prairie Analysis Seminar",
-    location: "University of Kansas, Lawrence, KS, USA",
+    location: "University of Kansas, Kansas, USA",
     dateRange: "Oct 25 - 26, 2024",
     type: "poster"
   }
