@@ -12,6 +12,16 @@ interface HomeSectionProps {
 export default function HomeSection({ setActiveSection }: HomeSectionProps) {
   return (
     <div id="home-section-root" className="space-y-8 animate-fade-in">
+      <h1 className="sr-only">
+    Nhung H. Nguyen | Ph.D. Candidate in Mathematics at Kansas State University
+  </h1>
+
+  <p className="sr-only">
+    Nhung H. Nguyen is a Ph.D. candidate in Mathematics at Kansas State University.
+    Her research focuses on computational inverse problems, scientific computing,
+    imaging, and source reconstruction.
+  </p>
+
 
       {/* Main Grid: Info Cards & Sidebar */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -31,9 +41,6 @@ export default function HomeSection({ setActiveSection }: HomeSectionProps) {
                 className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover object-center border-2 border-[#e2e1d8] shadow-sm shrink-0"
               />
               <div className="flex-grow text-center sm:text-left">
-                <h1 className="sr-only">
-                  Nhung H. Nguyen – Ph.D. Candidate in Mathematics at Kansas State University
-                </h1>
                 <h2 className="font-serif text-2xl font-bold text-[#4a4c41] mb-4 border-b border-[#e2e1d8] pb-3">
                   About Me
                 </h2>
