@@ -25,11 +25,15 @@ export default function HomeSection({ setActiveSection }: HomeSectionProps) {
             
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
               <img
-                src={avatarImage}
-                alt="Nhung H. Nguyen"
-                referrerPolicy="no-referrer"
-                className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover object-center border-2 border-[#e2e1d8] shadow-sm shrink-0"
-              />
+  src={avatarImage}
+  alt="avatar"
+  style={{
+    width: 120,
+    height: 120,
+    borderRadius: "50%",
+    border: "5px solid red"
+  }}
+/>
               <div className="flex-grow text-center sm:text-left">
                 <h2 className="font-serif text-2xl font-bold text-[#4a4c41] mb-4 border-b border-[#e2e1d8] pb-3">
                   About Me
