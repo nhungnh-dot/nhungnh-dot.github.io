@@ -177,7 +177,7 @@ export const COURSES: Course[] = [
     roles: ["Lecturer", "Coordinator", "Lab Instructor"],
     institution: "Kansas State University",
     semesters: ["Summer 2026"],
-    description: "Ordinary differential equations, focusing on first-order equations, linear equations of higher order, systems of differential equations, Laplace transforms, and series solutions. Served as both primary Lecturer and course-wide Coordinator, setting curricula and overseeing exams.",
+    description: "Elementary techniques for solving ordinary differential equations and applications to solutions of problems in science and engineering.",
     level: "Undergraduate"
   },
   {
@@ -207,7 +207,7 @@ export const COURSES: Course[] = [
     roles: ["Lecturer", "Lab Instructor"],
     institution: "Kansas State University",
     semesters: ["Summer 2024"],
-    description: "Systems of linear equations, matrices, determinants, vector spaces, inner product spaces, linear transformations, eigenvalues and eigenvectors. Included leading scientific computing labs using Matlab to implement numerical linear algebra routines.",
+    description: "Matrix algebra, solutions to systems of linear equations, determinants, vector spaces, linear transformations, eigenvalues, linear programming, approximation techniques. Included leading scientific computing labs using Matlab to implement numerical linear algebra routines.",
     level: "Undergraduate"
   },
   {
@@ -217,7 +217,7 @@ export const COURSES: Course[] = [
     roles: ["Recitation Instructor"],
     institution: "Kansas State University",
     semesters: ["Spring 2026"],
-    description: "Applications of integration, techniques of integration, l'Hopital's rule, improper integrals, infinite sequences and series, Taylor series, parametric equations, and polar coordinates.",
+    description: "Applications of integration, techniques of integration, L'Hopital's rule, improper integrals, infinite sequences and series, Taylor series, parametric equations, and polar coordinates.",
     level: "Undergraduate"
   },
   {
@@ -227,7 +227,7 @@ export const COURSES: Course[] = [
     roles: ["Recitation Instructor"],
     institution: "Kansas State University",
     semesters: ["Fall 2025"],
-    description: "Trigonometric functions, identities, equations, solution of triangles, inverse trigonometric functions, and complex numbers.",
+    description: "Trigonometric and inverse trigonometric functions; trigonometric identities and equations; applications involving right triangles and applications illustrating the laws of sines and cosines.",
     level: "Undergraduate"
   },
   {
@@ -237,7 +237,7 @@ export const COURSES: Course[] = [
     roles: ["Recitation Instructor"],
     institution: "Kansas State University",
     semesters: ["Spring 2024"],
-    description: "Fundamental algebraic operations, functions, graphs, systems of linear and nonlinear equations, inequalities, logarithmic and exponential functions.",
+    description: "The topics covered in college algebra include numbers, algebraic symbols, equivalent algebraic expressions, coordinate systems, functions, polynomial functions, exponential functions, systems of equations and inequalities, and zeros of polynomials.",
     level: "Undergraduate"
   },
   {
@@ -247,7 +247,7 @@ export const COURSES: Course[] = [
     roles: ["Recitation Instructor", "Lab Instructor"],
     institution: "Kansas State University",
     semesters: ["Fall 2024"],
-    description: "Interactive college algebra utilizing computer-assisted learning labs and specialized active-learning group problem-solving sessions.",
+    description: "The topics covered in college algebra include numbers, algebraic symbols, equivalent algebraic expressions, coordinate systems, functions, polynomial functions, exponential functions, systems of equations and inequalities, and zeros of polynomials. Interactive college algebra utilizing computer-assisted learning labs and specialized active-learning group problem-solving sessions.",
     level: "Undergraduate"
   },
   {
@@ -257,7 +257,7 @@ export const COURSES: Course[] = [
     roles: ["Substitute Instructor"],
     institution: "Kansas State University",
     semesters: ["Spring 2026"],
-    description: "Graduate-level survey of analytical mathematical methods for physics and engineering, focusing heavily on Fourier series, boundary value problems, and partial differential equations.",
+    description: "Linear operator theory applied to matrix, integral and differential equations. Spectral theory, the Fredholm Alternative, least-squares and pseudo-inverses. Banach and Hilbert space techniques, Fourier series and wavelets, theory of distributions, Green’s functions.",
     level: "Graduate"
   },
   {
@@ -267,7 +267,7 @@ export const COURSES: Course[] = [
     roles: ["Substitute Instructor"],
     institution: "Kansas State University",
     semesters: ["Fall 2024"],
-    description: "High-intensity foundations covering polynomial, rational, exponential, logarithmic, and trigonometric functions to ensure rigorous preparation for the engineering calculus track.",
+    description: "Fundamental concepts of Algebra and Trigonometry needed for the study of calculus. Topics include algebraic equations and inequalities, functions and graphs, zeros of polynomial functions, exponential and logarithmic functions, Trigonometric functions and their graphs, inverse trigonometric functions, and trigonometric identities and equations.",
     level: "Undergraduate"
   },
   {
@@ -277,7 +277,7 @@ export const COURSES: Course[] = [
     roles: ["Session Leader"],
     institution: "Kansas State University",
     semesters: ["2026"],
-    description: "Organized and led intensive review workshops for incoming and first-year Ph.D. students preparing to take the Mathematics Qualifying Exam I covering Linear Algebra and Advanced Calculus.",
+    description: "Organized and led intensive review workshops for incoming and first-year Ph.D. students preparing to take the Mathematics Qualifying Exam I covering Applied Math II.",
     level: "Graduate"
   },
   {
