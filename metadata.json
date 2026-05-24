@@ -1,0 +1,6 @@
+{
+  "name": "Nhung H. Nguyen - Personal Website",
+  "description": "Personal website of Nhung H. Nguyen, PhD Student in Mathematics at Kansas State University. Showcases research, teaching, and mentoring in computational inverse problems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

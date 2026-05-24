@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  /* Natural Tones Palette mapping to brand elements */
+  --color-brand-primary: #4a4c41;     /* Dark olive charcoal / forest slate */
+  --color-brand-secondary: #5d6052;   /* Muted rich organic olive */
+  --color-brand-accent: #6b6d5c;      /* Moss wood medium slate */
+  --color-brand-light: #f2f1ea;       /* Warm secondary backing beige */
+  
+  --color-natural-bg: #fdfcf9;        /* Warm sand / soft ivory */
+  --color-natural-card: #ffffff;      /* Clean contrast white card */
+  --color-natural-border: #e2e1d8;    /* Muted olive border */
+  --color-natural-accent: #d6d8c8;    /* Soft decorative sage */
+  --color-natural-text-main: #4a4c41; /* Primary body/heading forest dark */
+  --color-natural-text-muted: #8a8c7a;/* Light forest grey for secondary details */
+  --color-natural-text-light: #b4b6a4;/* Very soft tracker indicator */
+}
+
+/* Custom styles for animations or subtle effects */
+@keyframes pulse-wave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+}
+
+.animate-wave {
+  animation: pulse-wave 4s ease-in-out infinite;
+}
