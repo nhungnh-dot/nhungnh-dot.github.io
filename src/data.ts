@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   advisor: "Prof. Dinh-Liem Nguyen",
   advisorUrl: "https://sites.google.com/site/dinhliemnguyen/home",
   ksuMathUrl: "https://www.math.ksu.edu/",
-  bio: "I am a Ph.D. candidate in Mathematics at Kansas State University, advised by Prof. Dinh-Liem Nguyen. My research focuses on computational inverse problems, scientific computing, imaging, and source reconstruction.",
+  bio: "I am a Ph.D. candidate in Mathematics at Kansas State University, advised by Dinh-Liem Nguyen. My research focuses on computational inverse problems, scientific computing, imaging, and source reconstruction. I am passionate about teaching and mentoring, and I enjoy supporting students in developing mathematical understanding, confidence, and problem-solving skills. I also have a strong interest in artificial intelligence, machine learning, and data analytics, with an interest in applying data-driven methods to scientific and computational problems.",
   education: [
     {
       degree: "Ph.D. in Mathematics",
@@ -29,8 +29,9 @@ export const PERSONAL_INFO = {
   interests: [
     "Inverse problems",
     "Scattering theory",
-    "Deep learning",
-    "Physic-informed neural networks"
+    "Machine learning",
+    "Artificial intelligence",
+    "Data analytics"
   ]
 };
 
