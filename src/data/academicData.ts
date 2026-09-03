@@ -16,8 +16,8 @@ export const PERSONAL_INFO = {
   linkedin: "https://www.linkedin.com/in/nhung-nguyen-802846373/",
   github: "https://github.com/nhungnh-dot",
   originalWebsite: "https://nhungnh-dot.github.io/nhungnh/index.html",
-  profileImage: "/profile-image.png",
-  logoImage: "/logo.png",
+  profileImage: `${import.meta.env.BASE_URL}profile-image.png`,
+  logoImage: `${import.meta.env.BASE_URL}logo.png`,
   bio: "Welcome to my homepage! I am a PhD student in Mathematics at Kansas State University, working under the supervision of Prof. Dinh-Liem Nguyen. My research focuses on computational inverse problems, imaging, inverse scattering, and source reconstruction.",
   researchSummary: "I specialize in developing rigorous mathematical theories and scalable computational algorithms for inverse wave scattering, source reconstruction, and imaging modalities. My work combines spectral methods, partial differential equations (PDEs), and scientific machine learning (model-informed neural networks) to identify defective units in periodic structures and reconstruct acoustic and electromagnetic sources from scarce measurement data.",
   researchKeywords: [
