@@ -1,0 +1,6 @@
+{
+  "name": "Nhung H. Nguyen - Academic Website",
+  "description": "Personal academic website of Nhung H. Nguyen, Ph.D. student in Mathematics at Kansas State University specializing in computational inverse problems, imaging, inverse scattering, and source reconstruction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
