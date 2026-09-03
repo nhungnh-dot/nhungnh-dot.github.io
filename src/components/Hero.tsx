@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   if (!target.src.includes('assets/')) {
-                    target.src = '/assets/profile-image.png';
+                    target.src = `${import.meta.env.BASE_URL}assets/profile-image.png`;
                   }
                 }}
               />
