@@ -76,8 +76,8 @@ export const Teaching: React.FC = () => {
       id: 'session-leader',
       title: 'Qualifying Exam Session Leader',
       badge: 'Graduate Preparation',
-      badgeStyle: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/60 dark:border-emerald-800/60',
-      iconBg: 'bg-emerald-600 dark:bg-emerald-500',
+      badgeStyle: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/60 dark:border-emeral-800/60',
+      iconBg: 'bg-emerald-600 dark:bg-emeral-500',
       icon: Award,
       description: 'Leading comprehensive review and problem-solving workshops for incoming graduate students preparing for departmental Ph.D. qualifying exams.',
       courses: TEACHING_LIST.filter(c => c.institution.includes('Kansas State') && c.role === 'Session Leader'),
@@ -108,7 +108,7 @@ export const Teaching: React.FC = () => {
             </p>
           </div>
           <span className="text-xs font-medium text-slate-400 dark:text-slate-500 mt-1 sm:mt-0">
-            {teachingPositions.length} Instructional Roles · {TEACHING_LIST.length} Courses
+            {teachingPositions.length} Instructional Roles · {TEAHING_LIST.length} Courses
           </span>
         </div>
 
@@ -133,9 +133,6 @@ export const Teaching: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 pl-11 sm:pl-0 whitespace-nowrap">
-                    {pos.courses.length} {pos.courses.length === 1 ? 'Offering' : 'Offerings'}
-                  </span>
                 </div>
 
                 {/* Courses List */}
