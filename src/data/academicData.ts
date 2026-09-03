@@ -447,7 +447,7 @@ export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
     affiliation: "Kansas State University",
     program: "Undergraduate Research Project & Directed Reading Program (DRP)",
     term: "Spring 2025 & Fall 2025",
-    coMentors: "Co-mentored with faculty",
+    coMentors: "Co-mentored with Prof. Dinh-Liem Nguyen",
     projects: [
       "Inverse source problem with extended sources (Fall 2025)",
       "Numerical integration and MATLAB scientific computing (Spring 2025)"
@@ -470,7 +470,7 @@ export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
     affiliation: "Kansas State University",
     program: "Undergraduate Research Project & Directed Reading Program (DRP)",
     term: "Fall 2024",
-    coMentors: "Co-mentored with faculty",
+    coMentors: "Co-mentored with Prof. Dinh-Liem Nguyen",
     projects: [
       "Quantitative imaging of point-like targets"
     ]
