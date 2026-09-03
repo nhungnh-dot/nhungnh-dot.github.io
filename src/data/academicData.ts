@@ -410,7 +410,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   // High School Internships in Vietnam
   {
     id: "teach-15",
-    code: "HS-PRECALC-1",
+    code: " ",
     title: "Pre-Calculus (Teaching Internship)",
     role: "Lecturer",
     term: "Feb 2023 – Apr 2023",
@@ -420,7 +420,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   },
   {
     id: "teach-16",
-    code: "HS-PRECALC-2",
+    code: " ",
     title: "Pre-Calculus (Teaching Internship)",
     role: "Lecturer",
     term: "Mar 2022 – Apr 2022",
