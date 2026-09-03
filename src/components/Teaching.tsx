@@ -79,7 +79,7 @@ export const Teaching: React.FC = () => {
       badgeStyle: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/60 dark:border-emerald-800/60',
       iconBg: 'bg-emerald-600 dark:bg-emerald-500',
       icon: Award,
-      description: 'Conducting Ph.D. qualifying exam review workshops for graduate students',
+      description: 'Conducting Ph.D. qualifying exam review workshops for graduate students.',
       courses: TEACHING_LIST.filter(c => c.institution.includes('Kansas State') && c.role === 'Session Leader'),
     },
     {
