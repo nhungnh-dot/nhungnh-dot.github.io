@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, ExternalLink, GraduationCap } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/academicData';
 
 interface HeroProps {
@@ -83,6 +83,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
               >
                 <Linkedin className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
                 <span>LinkedIn</span>
+              </a>
+
+              <a
+                href="https://scholar.google.com/citations?hl=en&user=mjpMbqoAAAAJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >
+                <GraduationCap className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+                <span>Google Scholar</span>
               </a>
             </div>
 
