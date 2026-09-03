@@ -11,9 +11,10 @@ import { BibtexModal } from './components/BibtexModal';
 import { CvModal } from './components/CvModal';
 import { Publication } from './types';
 
-type AcademicTab = 'research' | 'teaching' | 'mentoring';
+type SiteTab = 'about' | 'research' | 'teaching' | 'mentoring';
 
-const ACADEMIC_TABS: Array<{ id: AcademicTab; label: string }> = [
+const SITE_TABS: Array<{ id: SiteTab; label: string }> = [
+  { id: 'about', label: 'About' },
   { id: 'research', label: 'Research' },
   { id: 'teaching', label: 'Teaching' },
   { id: 'mentoring', label: 'Mentoring & Service' },
@@ -31,7 +32,7 @@ export default function App() {
 
   const [selectedBibtexPub, setSelectedBibtexPub] = useState<Publication | null>(null);
   const [isCvModalOpen, setIsCvModalOpen] = useState<boolean>(false);
-  const [activeAcademicTab, setActiveAcademicTab] = useState<AcademicTab>('research');
+  const [activeTab, setActiveTab] = useState<SiteTab>('about');
 
   // Apply dark mode class to document
   useEffect(() => {
@@ -67,33 +68,26 @@ export default function App() {
       />
 
       {/* Main Content Sections */}
-      <main id="main-content">
-        <Hero
-          onOpenCvModal={() => setIsCvModalOpen(true)}
-          onNavigate={handleNavigate}
-        />
-
-        <EducationEmployment />
-
+      <main id="main-content" className="pt-16">
         <div className="sticky top-16 z-30 border-b border-slate-200 bg-slate-50/95 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/95 no-print">
           <div
             className="max-w-4xl mx-auto px-4 sm:px-6 overflow-x-auto"
             role="tablist"
-            aria-label="Academic work"
+            aria-label="Main sections"
           >
-            <div className="flex min-w-max sm:min-w-0 sm:grid sm:grid-cols-3">
-              {ACADEMIC_TABS.map((tab) => {
-                const isActive = activeAcademicTab === tab.id;
+            <div className="flex min-w-max sm:min-w-0 sm:grid sm:grid-cols-4">
+              {SITE_TABS.map((tab) => {
+                const isActive = activeTab === tab.id;
 
                 return (
                   <button
                     key={tab.id}
-                    id={`academic-tab-${tab.id}`}
+                    id={`site-tab-${tab.id}`}
                     type="button"
                     role="tab"
                     aria-selected={isActive}
-                    aria-controls={`academic-panel-${tab.id}`}
-                    onClick={() => setActiveAcademicTab(tab.id)}
+                    aria-controls={`site-panel-${tab.id}`}
+                    onClick={() => setActiveTab(tab.id)}
                     className={`relative px-5 py-4 text-sm font-semibold whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 sm:px-3 ${
                       isActive
                         ? 'text-indigo-700 dark:text-indigo-300'
@@ -114,11 +108,25 @@ export default function App() {
           </div>
         </div>
 
-        {activeAcademicTab === 'research' && (
+        {activeTab === 'about' && (
           <div
-            id="academic-panel-research"
+            id="site-panel-about"
             role="tabpanel"
-            aria-labelledby="academic-tab-research"
+            aria-labelledby="site-tab-about"
+          >
+            <Hero
+              onOpenCvModal={() => setIsCvModalOpen(true)}
+              onNavigate={handleNavigate}
+            />
+            <EducationEmployment />
+          </div>
+        )}
+
+        {activeTab === 'research' && (
+          <div
+            id="site-panel-research"
+            role="tabpanel"
+            aria-labelledby="site-tab-research"
           >
             <ResearchPublications
               onOpenBibtex={(pub) => setSelectedBibtexPub(pub)}
@@ -127,21 +135,21 @@ export default function App() {
           </div>
         )}
 
-        {activeAcademicTab === 'teaching' && (
+        {activeTab === 'teaching' && (
           <div
-            id="academic-panel-teaching"
+            id="site-panel-teaching"
             role="tabpanel"
-            aria-labelledby="academic-tab-teaching"
+            aria-labelledby="site-tab-teaching"
           >
             <Teaching />
           </div>
         )}
 
-        {activeAcademicTab === 'mentoring' && (
+        {activeTab === 'mentoring' && (
           <div
-            id="academic-panel-mentoring"
+            id="site-panel-mentoring"
             role="tabpanel"
-            aria-labelledby="academic-tab-mentoring"
+            aria-labelledby="site-tab-mentoring"
           >
             <Mentoring />
           </div>
