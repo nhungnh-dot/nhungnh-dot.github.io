@@ -1,35 +1,17 @@
-import React, { useState } from 'react';
-import { FileText, Copy, Check, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import React from 'react';
+import { ExternalLink } from 'lucide-react';
 import { PUBLICATIONS_LIST } from '../data/academicData';
 import { Publication } from '../types';
 
 interface ResearchProps {
-  onOpenBibtex: (pub: Publication) => void;
+  onOpenBibtex?: (pub: Publication) => void;
 }
 
-export const ResearchPublications: React.FC<ResearchProps> = ({ onOpenBibtex }) => {
-  const [expandedAbstracts, setExpandedAbstracts] = useState<Record<string, boolean>>({});
-  const [copiedId, setCopiedId] = useState<string | null>(null);
-
-  const toggleAbstract = (id: string) => {
-    setExpandedAbstracts(prev => ({ ...prev, [id]: !prev[id] }));
-  };
-
-  const handleCopyCitation = (pub: Publication) => {
-    const citation = `${pub.authors.join(', ')}. "${pub.title}." ${pub.venue}, ${pub.year}.`;
-    navigator.clipboard.writeText(citation);
-    setCopiedId(pub.id);
-    setTimeout(() => setCopiedId(null), 2000);
-  };
-
+export const ResearchPublications: React.FC<ResearchProps> = () => {
   const preprints = PUBLICATIONS_LIST.filter(p => p.status === 'submitted');
   const published = PUBLICATIONS_LIST.filter(p => p.status === 'published');
 
-  const renderPubItem = (pub: Publication, index: number) => {
-    const isExpanded = !!expandedAbstracts[pub.id];
-    const isCopied = copiedId === pub.id;
-
-    return (
+  const renderPubItem = (pub: Publication) => (
       <li key={pub.id} id={`publication-${pub.id}`} className="py-4 first:pt-0 last:pb-0">
         <div className="flex flex-col gap-1.5">
           {/* Title */}
@@ -70,40 +52,10 @@ export const ResearchPublications: React.FC<ResearchProps> = ({ onOpenBibtex }) 
                 <ExternalLink className="w-3 h-3" />
               </a>
             )}
-            <button
-              onClick={() => onOpenBibtex(pub)}
-              className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium cursor-pointer"
-            >
-              [BibTeX]
-            </button>
-            <button
-              onClick={() => handleCopyCitation(pub)}
-              className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors cursor-pointer"
-            >
-              {isCopied ? '[Copied!]' : '[Cite]'}
-            </button>
-            {pub.abstract && (
-              <button
-                onClick={() => toggleAbstract(pub.id)}
-                className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors cursor-pointer inline-flex items-center gap-0.5"
-              >
-                <span>{isExpanded ? '[Hide Abstract]' : '[Abstract]'}</span>
-                {isExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
-              </button>
-            )}
           </div>
-
-          {/* Collapsible Abstract */}
-          {pub.abstract && isExpanded && (
-            <div className="mt-2 p-3 rounded-lg bg-slate-100/80 dark:bg-slate-900 text-xs text-slate-600 dark:text-slate-300 leading-relaxed border border-slate-200/80 dark:border-slate-800">
-              <span className="font-semibold text-slate-800 dark:text-slate-200">Abstract: </span>
-              {pub.abstract}
-            </div>
-          )}
         </div>
       </li>
-    );
-  };
+  );
 
   return (
     <section id="research" className="py-12 sm:py-16 border-b border-slate-200 dark:border-slate-800">
@@ -118,7 +70,7 @@ export const ResearchPublications: React.FC<ResearchProps> = ({ onOpenBibtex }) 
             Preprints & Working Papers
           </h3>
           <ol className="divide-y divide-slate-200 dark:divide-slate-800 list-none">
-            {preprints.map((pub, idx) => renderPubItem(pub, idx))}
+            {preprints.map(renderPubItem)}
           </ol>
         </div>
 
@@ -128,7 +80,7 @@ export const ResearchPublications: React.FC<ResearchProps> = ({ onOpenBibtex }) 
             Journal Articles
           </h3>
           <ol className="divide-y divide-slate-200 dark:divide-slate-800 list-none">
-            {published.map((pub, idx) => renderPubItem(pub, idx))}
+            {published.map(renderPubItem)}
           </ol>
         </div>
       </div>
