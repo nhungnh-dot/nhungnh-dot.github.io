@@ -11,6 +11,14 @@ import { BibtexModal } from './components/BibtexModal';
 import { CvModal } from './components/CvModal';
 import { Publication } from './types';
 
+type AcademicTab = 'research' | 'teaching' | 'mentoring';
+
+const ACADEMIC_TABS: Array<{ id: AcademicTab; label: string }> = [
+  { id: 'research', label: 'Research' },
+  { id: 'teaching', label: 'Teaching' },
+  { id: 'mentoring', label: 'Mentoring & Service' },
+];
+
 export default function App() {
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
@@ -23,6 +31,7 @@ export default function App() {
 
   const [selectedBibtexPub, setSelectedBibtexPub] = useState<Publication | null>(null);
   const [isCvModalOpen, setIsCvModalOpen] = useState<boolean>(false);
+  const [activeAcademicTab, setActiveAcademicTab] = useState<AcademicTab>('research');
 
   // Apply dark mode class to document
   useEffect(() => {
@@ -66,15 +75,77 @@ export default function App() {
 
         <EducationEmployment />
 
-        <ResearchPublications
-          onOpenBibtex={(pub) => setSelectedBibtexPub(pub)}
-        />
+        <div className="sticky top-16 z-30 border-b border-slate-200 bg-slate-50/95 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/95 no-print">
+          <div
+            className="max-w-4xl mx-auto px-4 sm:px-6 overflow-x-auto"
+            role="tablist"
+            aria-label="Academic work"
+          >
+            <div className="flex min-w-max sm:min-w-0 sm:grid sm:grid-cols-3">
+              {ACADEMIC_TABS.map((tab) => {
+                const isActive = activeAcademicTab === tab.id;
 
-        <TalksPresentations />
+                return (
+                  <button
+                    key={tab.id}
+                    id={`academic-tab-${tab.id}`}
+                    type="button"
+                    role="tab"
+                    aria-selected={isActive}
+                    aria-controls={`academic-panel-${tab.id}`}
+                    onClick={() => setActiveAcademicTab(tab.id)}
+                    className={`relative px-5 py-4 text-sm font-semibold whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 sm:px-3 ${
+                      isActive
+                        ? 'text-indigo-700 dark:text-indigo-300'
+                        : 'text-slate-600 hover:text-slate-950 dark:text-slate-400 dark:hover:text-slate-100'
+                    }`}
+                  >
+                    {tab.label}
+                    <span
+                      aria-hidden="true"
+                      className={`absolute inset-x-4 bottom-0 h-0.5 rounded-full bg-indigo-600 transition-opacity dark:bg-indigo-400 ${
+                        isActive ? 'opacity-100' : 'opacity-0'
+                      }`}
+                    />
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
 
-        <Teaching />
+        {activeAcademicTab === 'research' && (
+          <div
+            id="academic-panel-research"
+            role="tabpanel"
+            aria-labelledby="academic-tab-research"
+          >
+            <ResearchPublications
+              onOpenBibtex={(pub) => setSelectedBibtexPub(pub)}
+            />
+            <TalksPresentations />
+          </div>
+        )}
 
-        <Mentoring />
+        {activeAcademicTab === 'teaching' && (
+          <div
+            id="academic-panel-teaching"
+            role="tabpanel"
+            aria-labelledby="academic-tab-teaching"
+          >
+            <Teaching />
+          </div>
+        )}
+
+        {activeAcademicTab === 'mentoring' && (
+          <div
+            id="academic-panel-mentoring"
+            role="tabpanel"
+            aria-labelledby="academic-tab-mentoring"
+          >
+            <Mentoring />
+          </div>
+        )}
       </main>
 
       {/* Contact & Academic Footer */}
