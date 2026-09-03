@@ -398,7 +398,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   // Session Leader
   {
     id: "teach-14",
-    code: "QUAL-I",
+    code: " ",
     title: "Qualifying Exam I Review Sessions",
     role: "Session Leader",
     term: "2026",
