@@ -45,7 +45,13 @@ export const ContactFooter: React.FC = () => {
                 </button>
               </div>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                Alt: {PERSONAL_INFO.altEmail}
+                Alt:{' '}
+                <a
+                  href={`mailto:${PERSONAL_INFO.altEmail}`}
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >
+                  {PERSONAL_INFO.altEmail}
+                </a>
               </p>
             </div>
 
