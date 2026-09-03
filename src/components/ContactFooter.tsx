@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Copy, Check, ArrowUp } from 'lucide-react';
+import { Copy, Check, ArrowUp } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/academicData';
 
 export const ContactFooter: React.FC = () => {
@@ -22,7 +22,7 @@ export const ContactFooter: React.FC = () => {
           Contact
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10 text-sm">
+        <div className="mb-10 text-sm">
           {/* Email and Office */}
           <div className="space-y-3">
             <div>
@@ -65,58 +65,6 @@ export const ContactFooter: React.FC = () => {
             </div>
           </div>
 
-          {/* Links & Profiles */}
-          <div className="space-y-2.5">
-            <span className="text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 font-semibold block mb-1">
-              Links & Profiles
-            </span>
-            <div>
-              <a
-                href={PERSONAL_INFO.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-              >
-                <Linkedin className="w-4 h-4 text-sky-600 dark:text-sky-400" />
-                <span>LinkedIn Profile</span>
-                <ExternalLink className="w-3 h-3 text-slate-400" />
-              </a>
-            </div>
-            <div>
-              <a
-                href={PERSONAL_INFO.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-              >
-                <Github className="w-4 h-4" />
-                <span>GitHub (@nhungnh-dot)</span>
-                <ExternalLink className="w-3 h-3 text-slate-400" />
-              </a>
-            </div>
-            <div>
-              <a
-                href={PERSONAL_INFO.originalWebsite}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-                <span>GitHub Pages Website</span>
-              </a>
-            </div>
-            <div>
-              <a
-                href={PERSONAL_INFO.departmentUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4 text-slate-400" />
-                <span>KSU Department of Mathematics</span>
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Footer bottom bar */}
