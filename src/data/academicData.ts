@@ -36,7 +36,7 @@ export const EDUCATION_LIST: EducationItem[] = [
     degree: "Ph.D. in Mathematics",
     institution: "Kansas State University",
     location: "Manhattan, Kansas, USA",
-    period: "2023 – Present (Expected Summer 2028)",
+    period: "2024 – Present (Expected Summer 2028)",
     link: "https://www.math.ksu.edu/",
     details: "Supervised by Prof. Dinh-Liem Nguyen. Specializing in computational inverse problems, imaging, and scientific computing."
   },
