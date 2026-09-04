@@ -99,16 +99,20 @@ export const PUBLICATIONS_LIST: Publication[] = [
     id: "pub-2",
     title: "Identifying defective units in infinite periodic arrays of point sources",
     authors: ["Dinh-Liem Nguyen", "Nhung H. Nguyen", "Thi-Phong Nguyen"],
-    venue: "Submitted to peer-reviewed journal",
+    venue: "Inverse Problems",
     year: 2026,
-    status: "submitted",
+    status: "published",
     tags: ["Inverse Scattering", "Periodic Arrays", "Acoustic Waves", "Point Sources"],
     abstract: "This work investigates the inverse problem of identifying defective elements within infinite periodic arrays of point-like acoustic and electromagnetic radiators. We develop a quasi-periodic Floquet-Bloch analysis coupled with non-destructive sampling algorithms to locate damaged or uncalibrated units from phaseless/phased measurement fields.",
     bibtex: `@article{nguyen2026identifying,
   title={Identifying defective units in infinite periodic arrays of point sources},
   author={Nguyen, Dinh-Liem and Nguyen, Nhung H. and Nguyen, Thi-Phong},
-  journal={submitted},
-  year={2026}
+  journal={Nonlinear Analysis: Real World Applications},
+  volume={42},
+  pages={085013},
+  year={2026},
+  publisher={IOPscience},
+  doi={10.1088/1361-6420/ae9980}
 }`
   },
   {
