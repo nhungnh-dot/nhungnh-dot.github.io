@@ -1,6 +1,6 @@
 {
   "name": "Nhung H. Nguyen | Mathematics PhD Candidate",
-  "description": "Academic website of Nhung H. Nguyen, a Mathematics PhD Candidate at Kansas State University researching computational inverse problems, inverse scattering, imaging, and source reconstruction.",
+  "description": "I am Nhung H. Nguyen, a Mathematics PhD Candidate at Kansas State University. My research focuses on computational inverse problems, inverse scattering, imaging, and source reconstruction.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
