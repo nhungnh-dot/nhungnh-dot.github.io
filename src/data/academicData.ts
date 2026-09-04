@@ -3,14 +3,14 @@ import { Publication, Talk, CourseTeaching, MentoredStudent, MentoringActivity, 
 export const PERSONAL_INFO = {
   name: "Nhung H. Nguyen",
   alternateName: "Hong-Nhung Nguyen",
-  title: "Ph.D. Candidate in Mathematics",
+  title: "PhD Candidate in Mathematics",
   institution: "Kansas State University",
   institutionUrl: "https://www.ksu.edu/",
   department: "Department of Mathematics",
   departmentUrl: "https://www.math.ksu.edu/",
   advisor: "Prof. Dinh-Liem Nguyen",
   advisorUrl: "https://sites.google.com/site/dinhliemnguyen/home",
-  office: "Cardwell Hall",
+  office: "Cardwell Hall, Manhattan, KS 66506",
   email: "nhungnh@ksu.edu",
   altEmail: "nhungnh2102@gmail.com",
   linkedin: "https://www.linkedin.com/in/nhung-nguyen-802846373/",
@@ -18,15 +18,15 @@ export const PERSONAL_INFO = {
   originalWebsite: "https://nhungnh-dot.github.io/nhungnh/index.html",
   profileImage: `${import.meta.env.BASE_URL}profile-image.png`,
   logoImage: `${import.meta.env.BASE_URL}logo.png`,
-  bio: "Welcome to my homepage! I am a PhD candidate in Mathematics at Kansas State University, working under the supervision of Prof. Dinh-Liem Nguyen. My research focuses on computational inverse problems, imaging, inverse scattering, and source reconstruction.",
-  researchSummary: "My research interests lie in inverse scattering problems for partial differential equations, computational imaging, artificial intelligence, and machine learning. My primary research focuses on developing mathematical and computational methods for inverse scattering and source reconstruction, with applications to acoustic and electromagnetic waves. I am also interested in AI and machine learning and their applications to scientific computing.",
+  bio: "Welcome to my homepage! I am a PhD Candidate in Mathematics at Kansas State University, working under the supervision of Prof. Dinh-Liem Nguyen. My research focuses on computational inverse problems, imaging, inverse scattering, and source reconstruction.",
+  researchSummary: "I specialize in developing rigorous mathematical theories and scalable computational algorithms for inverse wave scattering, source reconstruction, and imaging modalities. My work combines spectral methods, partial differential equations (PDEs), and scientific machine learning (model-informed neural networks) to identify defective units in periodic structures and reconstruct acoustic and electromagnetic sources from scarce measurement data.",
   researchKeywords: [
-    "Inverse Problems",
-    "Computational Imaging",
-    "Partial Differential Equations",
+    "Computational Inverse Problems",
+    "Inverse Scattering & Wave Propagation",
+    "Source Reconstruction",
     "Physics-Informed Neural Networks (PINNs)",
-    "Machine Learning",
-    "AI"
+    "Spectral Numerical Methods",
+    "Fluid Dynamics & Stokes Systems"
   ]
 };
 
@@ -36,7 +36,7 @@ export const EDUCATION_LIST: EducationItem[] = [
     degree: "Ph.D. in Mathematics",
     institution: "Kansas State University",
     location: "Manhattan, Kansas, USA",
-    period: "2024 – Present (Expected Summer 2028)",
+    period: "2023 – Present (Expected Summer 2028)",
     link: "https://www.math.ksu.edu/",
     details: "Supervised by Prof. Dinh-Liem Nguyen. Specializing in computational inverse problems, imaging, and scientific computing."
   },
@@ -56,7 +56,7 @@ export const EMPLOYMENT_DATA = [
     title: "Graduate Research Assistant",
     semesters: ["Spring 2025", "Fall 2026"],
     type: "Research",
-    description: "Conducting research on inverse problems, as well as exploring applications of machine learning and artificial intelligence in education."
+    description: "Conducting research on inverse scattering, spectral neural networks, and acoustic/electromagnetic wave source identification."
   },
   {
     title: "REU Graduate Assistant",
@@ -99,10 +99,9 @@ export const PUBLICATIONS_LIST: Publication[] = [
     id: "pub-2",
     title: "Identifying defective units in infinite periodic arrays of point sources",
     authors: ["Dinh-Liem Nguyen", "Nhung H. Nguyen", "Thi-Phong Nguyen"],
-    venue: "Inverse Problems",
+    venue: "Submitted to peer-reviewed journal",
     year: 2026,
-    status: "published",
-    doi: "10.1088/1361-6420/ae9980",
+    status: "submitted",
     tags: ["Inverse Scattering", "Periodic Arrays", "Acoustic Waves", "Point Sources"],
     abstract: "This work investigates the inverse problem of identifying defective elements within infinite periodic arrays of point-like acoustic and electromagnetic radiators. We develop a quasi-periodic Floquet-Bloch analysis coupled with non-destructive sampling algorithms to locate damaged or uncalibrated units from phaseless/phased measurement fields.",
     bibtex: `@article{nguyen2026identifying,
@@ -144,7 +143,7 @@ export const TALKS_LIST: Talk[] = [
     date: "Oct 31 – Nov 2, 2025",
     location: "The Pennsylvania State University, University Park, PA",
     type: "invited",
-    session: "Minisymposium",
+    session: "Minisymposium on Computational Inverse Problems and Applications",
     format: "in-person"
   },
   {
@@ -164,20 +163,20 @@ export const TALKS_LIST: Talk[] = [
     date: "Oct 5 – 6, 2024",
     location: "University of Missouri - Kansas City, Kansas City, MO",
     type: "invited",
-    session: "Minisymposium",
+    session: "Minisymposium on Wave Scattering and Inverse Problems",
     format: "in-person"
   },
 
   // Contributed Talks
-  // {
-  //   id: "talk-con-1",
-  //   title: "Contributed Presentation",
-  //   event: "MATH FOR ALL Conference 2026",
-  //   date: "Apr 10 – 11, 2026",
-  //   location: "Virtual Conference",
-  //   type: "contributed",
-  //   format: "virtual"
-  // },
+  {
+    id: "talk-con-1",
+    title: "Contributed Presentation",
+    event: "MATH FOR ALL Conference 2026",
+    date: "Apr 10 – 11, 2026",
+    location: "Virtual Conference",
+    type: "contributed",
+    format: "virtual"
+  },
   {
     id: "talk-con-2",
     title: "Contributed Presentation",
@@ -196,15 +195,15 @@ export const TALKS_LIST: Talk[] = [
     type: "contributed",
     format: "in-person"
   },
-  // {
-  //   id: "talk-con-4",
-  //   title: "Contributed Presentation",
-  //   event: "The 3rd UNC Greensboro Virtual PDE Conference",
-  //   date: "Oct 10 – 12, 2025",
-  //   location: "Virtual Conference",
-  //   type: "contributed",
-  //   format: "virtual"
-  // },
+  {
+    id: "talk-con-4",
+    title: "Contributed Presentation",
+    event: "The 3rd UNC Greensboro Virtual PDE Conference",
+    date: "Oct 10 – 12, 2025",
+    location: "Virtual Conference",
+    type: "contributed",
+    format: "virtual"
+  },
   {
     id: "talk-con-5",
     title: "Contributed Presentation",
@@ -214,15 +213,15 @@ export const TALKS_LIST: Talk[] = [
     type: "contributed",
     format: "in-person"
   },
-  // {
-  //   id: "talk-con-6",
-  //   title: "Contributed Presentation",
-  //   event: "The 3rd International Mathematics and Statistics Student Research Symposium",
-  //   date: "Apr 12, 2025",
-  //   location: "Virtual Conference",
-  //   type: "contributed",
-  //   format: "virtual"
-  // },
+  {
+    id: "talk-con-6",
+    title: "Contributed Presentation",
+    event: "The 3rd International Mathematics and Statistics Student Research Symposium",
+    date: "Apr 12, 2025",
+    location: "Virtual Conference",
+    type: "contributed",
+    format: "virtual"
+  },
   {
     id: "talk-con-7",
     title: "Contributed Presentation",
@@ -398,7 +397,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   // Session Leader
   {
     id: "teach-14",
-    code: " ",
+    code: "QUAL-I",
     title: "Qualifying Exam I Review Sessions",
     role: "Session Leader",
     term: "2026",
@@ -410,7 +409,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   // High School Internships in Vietnam
   {
     id: "teach-15",
-    code: " ",
+    code: "HS-PRECALC-1",
     title: "Pre-Calculus (Teaching Internship)",
     role: "Lecturer",
     term: "Feb 2023 – Apr 2023",
@@ -420,7 +419,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   },
   {
     id: "teach-16",
-    code: " ",
+    code: "HS-PRECALC-2",
     title: "Pre-Calculus (Teaching Internship)",
     role: "Lecturer",
     term: "Mar 2022 – Apr 2022",
@@ -447,7 +446,7 @@ export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
     affiliation: "Kansas State University",
     program: "Undergraduate Research Project & Directed Reading Program (DRP)",
     term: "Spring 2025 & Fall 2025",
-    coMentors: "Co-mentored with Prof. Dinh-Liem Nguyen",
+    coMentors: "Co-mentored with faculty",
     projects: [
       "Inverse source problem with extended sources (Fall 2025)",
       "Numerical integration and MATLAB scientific computing (Spring 2025)"
@@ -470,7 +469,7 @@ export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
     affiliation: "Kansas State University",
     program: "Undergraduate Research Project & Directed Reading Program (DRP)",
     term: "Fall 2024",
-    coMentors: "Co-mentored with Prof. Dinh-Liem Nguyen",
+    coMentors: "Co-mentored with faculty",
     projects: [
       "Quantitative imaging of point-like targets"
     ]
