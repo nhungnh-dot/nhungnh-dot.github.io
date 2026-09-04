@@ -147,7 +147,7 @@ export const TALKS_LIST: Talk[] = [
     date: "Oct 31 – Nov 2, 2025",
     location: "The Pennsylvania State University, University Park, PA",
     type: "invited",
-    session: "Minisymposium on Computational Inverse Problems and Applications",
+    session: "Minisymposium",
     format: "in-person"
   },
   {
@@ -167,7 +167,7 @@ export const TALKS_LIST: Talk[] = [
     date: "Oct 5 – 6, 2024",
     location: "University of Missouri - Kansas City, Kansas City, MO",
     type: "invited",
-    session: "Minisymposium on Wave Scattering and Inverse Problems",
+    session: "Minisymposium",
     format: "in-person"
   },
 
