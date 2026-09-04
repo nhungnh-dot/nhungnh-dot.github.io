@@ -56,7 +56,7 @@ export const EMPLOYMENT_DATA = [
     title: "Graduate Research Assistant",
     semesters: ["Spring 2025", "Fall 2026"],
     type: "Research",
-    description: "Conducting research on inverse scattering, spectral neural networks, and acoustic/electromagnetic wave source identification."
+    description: "Conducting research on inverse scattering, spectral neural networks, and acoustic and electromagnetic wave source identification, as well as exploring applications of machine learning and artificial intelligence in education."
   },
   {
     title: "REU Graduate Assistant",
