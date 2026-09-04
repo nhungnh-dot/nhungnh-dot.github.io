@@ -172,15 +172,15 @@ export const TALKS_LIST: Talk[] = [
   },
 
   // Contributed Talks
-  {
-    id: "talk-con-1",
-    title: "Contributed Presentation",
-    event: "MATH FOR ALL Conference 2026",
-    date: "Apr 10 – 11, 2026",
-    location: "Virtual Conference",
-    type: "contributed",
-    format: "virtual"
-  },
+  // {
+  //   id: "talk-con-1",
+  //   title: "Contributed Presentation",
+  //   event: "MATH FOR ALL Conference 2026",
+  //   date: "Apr 10 – 11, 2026",
+  //   location: "Virtual Conference",
+  //   type: "contributed",
+  //   format: "virtual"
+  // },
   {
     id: "talk-con-2",
     title: "Contributed Presentation",
@@ -199,15 +199,15 @@ export const TALKS_LIST: Talk[] = [
     type: "contributed",
     format: "in-person"
   },
-  {
-    id: "talk-con-4",
-    title: "Contributed Presentation",
-    event: "The 3rd UNC Greensboro Virtual PDE Conference",
-    date: "Oct 10 – 12, 2025",
-    location: "Virtual Conference",
-    type: "contributed",
-    format: "virtual"
-  },
+  // {
+  //   id: "talk-con-4",
+  //   title: "Contributed Presentation",
+  //   event: "The 3rd UNC Greensboro Virtual PDE Conference",
+  //   date: "Oct 10 – 12, 2025",
+  //   location: "Virtual Conference",
+  //   type: "contributed",
+  //   format: "virtual"
+  // },
   {
     id: "talk-con-5",
     title: "Contributed Presentation",
@@ -217,15 +217,15 @@ export const TALKS_LIST: Talk[] = [
     type: "contributed",
     format: "in-person"
   },
-  {
-    id: "talk-con-6",
-    title: "Contributed Presentation",
-    event: "The 3rd International Mathematics and Statistics Student Research Symposium",
-    date: "Apr 12, 2025",
-    location: "Virtual Conference",
-    type: "contributed",
-    format: "virtual"
-  },
+  // {
+  //   id: "talk-con-6",
+  //   title: "Contributed Presentation",
+  //   event: "The 3rd International Mathematics and Statistics Student Research Symposium",
+  //   date: "Apr 12, 2025",
+  //   location: "Virtual Conference",
+  //   type: "contributed",
+  //   format: "virtual"
+  // },
   {
     id: "talk-con-7",
     title: "Contributed Presentation",
