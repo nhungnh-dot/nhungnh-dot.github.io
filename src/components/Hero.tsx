@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
             </h1>
 
             <p className="mt-3 text-base text-slate-700 dark:text-slate-300 leading-relaxed">
-              PhD Candidate in Mathematics at <span className="font-semibold text-slate-900 dark:text-slate-100">Kansas State University</span>, advised by{' '}
+              I am a PhD Candidate in Mathematics at <span className="font-semibold text-slate-900 dark:text-slate-100">Kansas State University</span>, advised by{' '}
               <a
                 href={PERSONAL_INFO.advisorUrl}
                 target="_blank"
