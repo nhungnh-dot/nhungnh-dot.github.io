@@ -79,7 +79,7 @@ export const Teaching: React.FC = () => {
       badgeStyle: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/60 dark:border-emerald-800/60',
       iconBg: 'bg-emerald-600 dark:bg-emerald-500',
       icon: Award,
-      description: 'Leading comprehensive review and problem-solving workshops for incoming graduate students preparing for departmental Ph.D. qualifying exams.',
+      description: 'Conducting Ph.D. qualifying exam review workshops for graduate students.',
       courses: TEACHING_LIST.filter(c => c.institution.includes('Kansas State') && c.role === 'Session Leader'),
     },
     {
@@ -89,7 +89,7 @@ export const Teaching: React.FC = () => {
       badgeStyle: 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700',
       iconBg: 'bg-slate-700 dark:bg-slate-600',
       icon: School,
-      description: 'Teaching internships as a designated component of the Bachelor’s Pedagogical Degree in Mathematics at Ho Chi Minh City University of Education.',
+      description: 'Teaching internships as part of a Bachelor’s degree in Mathematics Education.',
       courses: TEACHING_LIST.filter(c => c.institution.includes('Viet Nam')),
     },
   ];
