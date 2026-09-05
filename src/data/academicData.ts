@@ -414,22 +414,12 @@ export const TEACHING_LIST: CourseTeaching[] = [
   {
     id: "teach-15",
     code: "HS-PRECALC-1",
-    title: "Pre-Calculus (Teaching Internship)",
+    title: "Pre-Calculus",
     role: "Lecturer",
     term: "Feb 2023 – Apr 2023",
     institution: "Nguyen Trung Truc High School, Ho Chi Minh City, Viet Nam",
     level: "High School",
     description: "Teaching internship as a designated component of the bachelor's pedagogical degree in Mathematics at HCMUE."
-  },
-  {
-    id: "teach-16",
-    code: "HS-PRECALC-2",
-    title: "Pre-Calculus (Teaching Internship)",
-    role: "Lecturer",
-    term: "Mar 2022 – Apr 2022",
-    institution: "Dien Hong High School, Ho Chi Minh City, Viet Nam",
-    level: "High School",
-    description: "Teaching internship introducing advanced trigonometry, sequences, and mathematical analysis foundations."
   }
 ];
 
