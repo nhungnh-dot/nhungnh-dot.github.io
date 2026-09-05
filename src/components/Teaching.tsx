@@ -79,7 +79,7 @@ export const Teaching: React.FC = () => {
       badgeStyle: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/60 dark:border-emerald-800/60',
       iconBg: 'bg-emerald-600 dark:bg-emerald-500',
       icon: Award,
-      description: 'Conducting Ph.D. qualifying exam review workshops for graduate students.',
+      description: 'Leading comprehensive review and problem-solving workshops for incoming graduate students preparing for departmental Ph.D. qualifying exams.',
       courses: TEACHING_LIST.filter(c => c.institution.includes('Kansas State') && c.role === 'Session Leader'),
     },
     {
@@ -89,7 +89,7 @@ export const Teaching: React.FC = () => {
       badgeStyle: 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700',
       iconBg: 'bg-slate-700 dark:bg-slate-600',
       icon: School,
-      description: 'Teaching internships as part of a Bachelor’s degree in Mathematics Education.',
+      description: 'Teaching internships as a designated component of the Bachelor’s Pedagogical Degree in Mathematics at Ho Chi Minh City University of Education.',
       courses: TEACHING_LIST.filter(c => c.institution.includes('Viet Nam')),
     },
   ];
@@ -153,8 +153,16 @@ export const Teaching: React.FC = () => {
                             <span className="font-mono-code font-bold text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700/70">
                               {course.code}
                             </span>
-                            <span className="font-medium text-sm text-slate-900 dark:text-slate-100 font-serif-academic">
-                              {course.title}
+                            <span className="flex flex-col gap-0.5">
+                              <span className="font-medium text-sm text-slate-900 dark:text-slate-100 font-serif-academic">
+                                {course.title}
+                              </span>
+                              {pos.id === 'internships' && (
+                                <span className="text-xs text-slate-500 dark:text-slate-400 inline-flex items-center gap-1">
+                                  <School className="w-3 h-3 flex-shrink-0" />
+                                  {course.institution}
+                                </span>
+                              )}
                             </span>
                             {isGrad && (
                               <span className="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 border border-amber-200/60 dark:border-amber-800/60">
