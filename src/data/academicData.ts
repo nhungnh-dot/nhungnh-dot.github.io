@@ -420,6 +420,16 @@ export const TEACHING_LIST: CourseTeaching[] = [
     institution: "Nguyen Trung Truc High School, Ho Chi Minh City, Viet Nam",
     level: "High School",
     description: "Teaching internship as a designated component of the bachelor's pedagogical degree in Mathematics at HCMUE."
+  },
+  {
+    id: "teach-16",
+    code: "HS-PRECALC-2",
+    title: "Pre-Calculus",
+    role: "Lecturer",
+    term: "Mar 2022 – Apr 2022",
+    institution: "Dien Hong High School, Ho Chi Minh City, Viet Nam",
+    level: "High School",
+    description: "Teaching internship as a designated component of the bachelor's pedagogical degree in Mathematics at HCMUE."
   }
 ];
 
