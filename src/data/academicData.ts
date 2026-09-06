@@ -401,7 +401,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   // Session Leader
   {
     id: "teach-14",
-    code: "QUAL-I",
+    code: " ",
     title: "Qualifying Exam I Review Sessions",
     role: "Session Leader",
     term: "2026",
@@ -413,7 +413,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   // High School Internships in Vietnam
   {
     id: "teach-15",
-    code: "HS-PRECALC-1",
+    code: " ",
     title: "Pre-Calculus",
     role: "Lecturer",
     term: "Feb 2023 – Apr 2023",
@@ -423,7 +423,7 @@ export const TEACHING_LIST: CourseTeaching[] = [
   },
   {
     id: "teach-16",
-    code: "HS-PRECALC-2",
+    code: " ",
     title: "Pre-Calculus",
     role: "Lecturer",
     term: "Mar 2022 – Apr 2022",
