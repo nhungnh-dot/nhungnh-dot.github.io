@@ -25,9 +25,9 @@ export interface Talk {
 
 export interface CourseTeaching {
   id: string;
-  code: string;
+  code?: string;
   title: string;
-  role: 'Lecturer' | 'Recitation Instructor' | 'Coordinator' | 'Lab Instructor' | 'Substitute Instructor' | 'Session Leader';
+  role: 'Lecturer' | 'Recitation Instructor' | 'Coordinator' | 'Lab Instructor' | 'Substitute Instructor' | 'Session Leader' | 'Teaching Demonstration Presenter';
   term: string;
   institution: string;
   description?: string;

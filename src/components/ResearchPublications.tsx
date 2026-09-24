@@ -59,9 +59,9 @@ export const ResearchPublications: React.FC<ResearchProps> = () => {
   );
 
   return (
-    <section id="research" className="pt-10 pb-6 sm:pt-14 sm:pb-8">
+    <section id="research" className="pt-8 pb-5 sm:pt-10 sm:pb-6">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-7 sm:mb-8">
+        <div className="mb-5 sm:mb-6">
           <div className="flex items-center gap-4">
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300">
               <BookOpen className="h-6 w-6" aria-hidden="true" />
@@ -77,11 +77,11 @@ export const ResearchPublications: React.FC<ResearchProps> = () => {
           </div>
         </div>
 
-        <div className="mb-7 sm:mb-8">
+        <div className="mb-5 sm:mb-6">
           <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-4">
             Preprints & Working Papers
           </h3>
-          <ol className="space-y-5 sm:space-y-6 list-none">
+          <ol className="space-y-4 sm:space-y-5 list-none">
             {preprints.map(renderPubItem)}
           </ol>
         </div>
@@ -90,7 +90,7 @@ export const ResearchPublications: React.FC<ResearchProps> = () => {
           <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-4">
             Journal Articles
           </h3>
-          <ol className="space-y-5 sm:space-y-6 list-none">
+          <ol className="space-y-4 sm:space-y-5 list-none">
             {published.map(renderPubItem)}
           </ol>
         </div>

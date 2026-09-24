@@ -90,7 +90,7 @@ export default function App() {
                     aria-selected={isActive}
                     aria-controls={`site-panel-${tab.id}`}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`relative px-5 py-4 text-sm font-semibold whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 sm:px-3 ${
+                    className={`relative px-5 py-3 text-sm font-semibold whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 sm:px-3 ${
                       isActive
                         ? 'text-indigo-700 dark:text-indigo-300'
                         : 'text-slate-600 hover:text-slate-950 dark:text-slate-400 dark:hover:text-slate-100'

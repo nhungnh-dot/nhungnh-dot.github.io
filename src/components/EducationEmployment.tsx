@@ -4,20 +4,20 @@ import { EDUCATION_LIST, EMPLOYMENT_DATA } from '../data/academicData';
 
 export const EducationEmployment: React.FC = () => {
   return (
-    <section id="experience" className="py-12 sm:py-16 border-b border-slate-200 dark:border-slate-800">
+    <section id="experience" className="py-8 sm:py-10 border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic mb-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic mb-5">
           Education & Appointments
         </h2>
 
         {/* Education */}
-        <div className="mb-8">
+        <div className="mb-6">
           <h3 className="text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-3">
             Education
           </h3>
           <ul className="divide-y divide-slate-200 dark:divide-slate-800 list-none">
             {EDUCATION_LIST.map((edu) => (
-              <li key={edu.id} className="py-3.5 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <li key={edu.id} className="py-2.5 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-sm text-slate-900 dark:text-slate-100">
@@ -42,8 +42,8 @@ export const EducationEmployment: React.FC = () => {
         </div>
 
         {/* Appointments at KSU */}
-        <div className="pt-2">
-          <div className="flex items-center justify-between mb-4">
+        <div className="pt-1">
+          <div className="flex items-center justify-between mb-3">
             <h3 className="text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
               Appointments (Kansas State University)
             </h3>
@@ -52,7 +52,7 @@ export const EducationEmployment: React.FC = () => {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {EMPLOYMENT_DATA.map((job, idx) => (
               <div
                 key={idx}

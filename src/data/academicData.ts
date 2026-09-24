@@ -445,6 +445,15 @@ export const TEACHING_LIST: CourseTeaching[] = [
 
   // Lab Instructor
   {
+    id: "teach-10a",
+    code: "MATH 340",
+    title: "Elementary Differential Equations",
+    role: "Lab Instructor",
+    term: "Summer 2026",
+    institution: "Kansas State University",
+    level: "Undergraduate"
+  },
+  {
     id: "teach-10",
     code: "MATH 100",
     title: "Studio College Algebra",
@@ -496,6 +505,15 @@ export const TEACHING_LIST: CourseTeaching[] = [
     institution: "Kansas State University",
     level: "Graduate",
     description: "Leading comprehensive review and problem-solving workshops for incoming graduate students preparing for departmental Ph.D. qualifying examinations."
+  },
+
+  {
+    id: "teach-14b",
+    title: "Model Recitation for Incoming Graduate Teaching Assistants",
+    role: "Teaching Demonstration Presenter",
+    term: "Summer 2026",
+    institution: "Kansas State University",
+    level: "Graduate"
   },
 
   // High School Internships in Vietnam

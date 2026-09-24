@@ -9,9 +9,9 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
   return (
-    <section id="about" className="pt-24 pb-14 sm:pt-28 sm:pb-16 border-b border-slate-200 dark:border-slate-800">
+    <section id="about" className="py-8 sm:py-10 border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-10">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
           
           {/* Portrait */}
           <div className="flex-shrink-0 flex flex-col items-center">
@@ -49,12 +49,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
               </a>.
             </p>
 
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="mt-2.5 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
               {PERSONAL_INFO.researchSummary}
             </p>
 
             {/* Research Keywords */}
-            <div className="mt-4 flex flex-wrap justify-center sm:justify-start gap-1.5">
+            <div className="mt-3 flex flex-wrap justify-center sm:justify-start gap-1.5">
               {PERSONAL_INFO.researchKeywords.map((kw, idx) => (
                 <span
                   key={idx}
@@ -66,7 +66,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
             </div>
 
             {/* Direct Links */}
-            <div className="mt-6 flex flex-wrap items-center justify-center sm:justify-start gap-3">
+            <div className="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-3">
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-colors"

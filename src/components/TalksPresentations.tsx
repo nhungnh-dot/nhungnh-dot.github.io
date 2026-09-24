@@ -9,7 +9,7 @@ export const TalksPresentations: React.FC = () => {
   const posterTalks = TALKS_LIST.filter(t => t.type === 'poster');
 
   const renderTalkList = (talks: Talk[]) => (
-    <ul className="space-y-5 sm:space-y-6 list-none">
+    <ul className="space-y-4 sm:space-y-5 list-none">
       {talks.map((talk) => (
         <li key={talk.id} className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6">
           <div className="flex-1">
@@ -35,9 +35,9 @@ export const TalksPresentations: React.FC = () => {
   );
 
   return (
-    <section id="talks" className="pt-6 pb-10 sm:pt-8 sm:pb-14">
+    <section id="talks" className="pt-5 pb-8 sm:pt-6 sm:pb-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-7 sm:mb-8">
+        <div className="mb-5 sm:mb-6">
           <div className="flex items-center gap-4">
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-violet-700 dark:bg-violet-950/40 dark:text-violet-300">
               <Presentation className="h-6 w-6" aria-hidden="true" />
@@ -53,14 +53,14 @@ export const TalksPresentations: React.FC = () => {
           </div>
         </div>
 
-        <div className="mb-7 sm:mb-8">
+        <div className="mb-5 sm:mb-6">
           <h3 className="text-sm uppercase tracking-widest text-violet-700 dark:text-violet-300 font-bold mb-4">
             Invited Talks & Minisymposia
           </h3>
           {renderTalkList(invitedTalks)}
         </div>
 
-        <div className="mb-7 sm:mb-8">
+        <div className="mb-5 sm:mb-6">
           <h3 className="text-sm uppercase tracking-widest text-violet-700 dark:text-violet-300 font-bold mb-4">
             Contributed Presentations
           </h3>
