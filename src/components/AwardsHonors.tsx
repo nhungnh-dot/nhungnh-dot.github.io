@@ -1,26 +1,11 @@
 import React from 'react';
-import { Award, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { AWARDS_HONORS_LIST } from '../data/academicData';
 
 export const AwardsHonors: React.FC = () => {
   return (
     <section id="awards" className="py-8 sm:py-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-5 sm:mb-6">
-          <div className="flex items-center gap-4">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300">
-              <Award className="h-6 w-6" aria-hidden="true" />
-            </span>
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic">
-                Awards & Honors
-              </h2>
-              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
-                Recognition for teaching, research, mentoring, and academic achievement
-              </p>
-            </div>
-          </div>
-        </div>
 
         <div className="space-y-4 sm:space-y-5">
           {AWARDS_HONORS_LIST.map((award) => (
