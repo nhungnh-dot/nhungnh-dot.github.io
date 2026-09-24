@@ -176,7 +176,11 @@ export const PUBLICATIONS_LIST: Publication[] = [
     year: "",
     status: "submitted",
     tags: [],
-    bibtex: ""
+    bibtex: `@unpublished{nguyenphaseless,
+  title={A model-informed deep learning algorithm for solving the phaseless inverse scattering problem},
+  author={Nguyen, Dinh-Liem and Nguyen, Nhung H. and Ravi, Aravinth},
+  note={Submitted}
+}`
   },
   {
     id: "pub-5",
@@ -186,7 +190,11 @@ export const PUBLICATIONS_LIST: Publication[] = [
     year: "",
     status: "submitted",
     tags: [],
-    bibtex: ""
+    bibtex: `@unpublished{nguyennonlinearwaveguides,
+  title={Inverse scattering from nonlinear objects in scalar waveguides},
+  author={Nguyen, Dinh-Liem and Nguyen, Nhung H. and Nguyen, Thi-Phong},
+  note={Submitted}
+}`
   },
   {
     id: "pub-1",
