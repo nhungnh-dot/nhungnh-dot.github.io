@@ -35,8 +35,7 @@ export const TalksPresentations: React.FC = () => {
             </p>
             <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
               {talk.session && <>{talk.session}{', '}</>}
-              {talk.location}
-              {talk.format === 'virtual' && ' (Virtual)'}
+              {talk.format === 'virtual' ? 'Virtual' : talk.location}
             </p>
           </div>
           <span className="inline-flex items-center gap-2 flex-shrink-0 text-sm text-slate-500 dark:text-slate-400 sm:pl-4">
