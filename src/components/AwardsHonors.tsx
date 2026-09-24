@@ -1,37 +1,41 @@
 import React from 'react';
-import { Calendar } from 'lucide-react';
 import { AWARDS_HONORS_LIST } from '../data/academicData';
 
 export const AwardsHonors: React.FC = () => {
+  const institutions = [...new Set(AWARDS_HONORS_LIST.map(award => award.institution))];
+
   return (
     <section id="awards" className="py-8 sm:py-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-
-        <div className="space-y-4 sm:space-y-5">
-          {AWARDS_HONORS_LIST.map((award) => (
-            <article
-              key={award.id}
-              className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6"
-            >
-              <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">
-                  {award.title}
-                </h3>
-                <p className="text-sm text-indigo-700 dark:text-indigo-300 mt-1.5 font-medium">
-                  {award.institution}
-                </p>
-                {award.description && (
-                  <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mt-1.5 max-w-3xl">
-                    {award.description}
-                  </p>
-                )}
+        <div className="space-y-6 sm:space-y-7">
+          {institutions.map(institution => (
+            <section key={institution} aria-label={institution}>
+              <h2 className="mb-3 text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
+                {institution}
+              </h2>
+              <div className="space-y-3 sm:space-y-3.5">
+                {AWARDS_HONORS_LIST.filter(award => award.institution === institution).map(award => (
+                  <article
+                    key={award.id}
+                    className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <h3 className="text-sm sm:text-base font-semibold text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">
+                        {award.title}
+                      </h3>
+                      {award.description && (
+                        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                          {award.description}
+                        </p>
+                      )}
+                    </div>
+                    <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400 sm:pl-4">
+                      {award.year}
+                    </span>
+                  </article>
+                ))}
               </div>
-
-              <span className="inline-flex items-center gap-2 self-start rounded-full bg-amber-50 px-3 py-1.5 text-sm text-amber-800 dark:bg-amber-950/45 dark:text-amber-300 whitespace-nowrap flex-shrink-0 font-semibold sm:text-right">
-                <Calendar className="w-4 h-4" aria-hidden="true" />
-                {award.year}
-              </span>
-            </article>
+            </section>
           ))}
         </div>
       </div>
