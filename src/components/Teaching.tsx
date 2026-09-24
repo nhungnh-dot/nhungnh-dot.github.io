@@ -117,21 +117,6 @@ export const Teaching: React.FC = () => {
   return (
     <section id="teaching" className="py-8 sm:py-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-5 sm:mb-6">
-          <div className="flex items-center gap-4">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300">
-              <GraduationCap className="h-6 w-6" aria-hidden="true" />
-            </span>
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic">
-                Teaching Experience
-              </h2>
-              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
-                Department of Mathematics, Kansas State University
-              </p>
-            </div>
-          </div>
-        </div>
 
         <div className="space-y-5 sm:space-y-6">
           {teachingPositions.map((pos) => {
