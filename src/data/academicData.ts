@@ -1,4 +1,4 @@
-import { Publication, Talk, CourseTeaching, MentoredStudent, MentoringActivity, EducationItem } from '../types';
+import { Publication, Talk, CourseTeaching, MentoredStudent, MentoringActivity, AwardHonor, EducationItem } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Nhung H. Nguyen",
@@ -75,6 +75,95 @@ export const EMPLOYMENT_DATA = [
     semesters: ["Spring 2024", "Summer 2024", "Fall 2024", "Summer 2025", "Fall 2025", "Spring 2026", "Summer 2026"],
     type: "Teaching",
     description: "Serving as primary lecturer, recitation leader, and lab instructor across calculus, differential equations, and linear algebra courses."
+  }
+];
+
+export const AWARDS_HONORS_LIST: AwardHonor[] = [
+  {
+    id: "award-1",
+    title: "Stromberg Outstanding Graduate Teaching Assistant in Teaching Award",
+    year: "2026",
+    institution: "Kansas State University",
+    description: "The highest honor awarded by the K-State Department of Mathematics for exceptional classroom instruction, passion, and dedication to students."
+  },
+  {
+    id: "award-2",
+    title: "Vada F. Hainline Scholarship",
+    year: "2026",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-3",
+    title: "S. Thomas Parker Memorial Scholarship Fund",
+    year: "2026",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-4",
+    title: "Dressler Memorial Endowment for the Enrichment of Mathematics Scholarship",
+    year: "2026",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-5",
+    title: "L. Aileen Hostinsky Memorial Scholarship Fund",
+    year: "2026",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-6",
+    title: "Karl Stromberg Memorial Endowment for the Enrichment of Mathematics Scholarship",
+    year: "2025 - 2026",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-7",
+    title: "2025 K-State AI Symposium: Humans and the Machine Poster Award",
+    year: "2025",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-8",
+    title: "Dr. William L. Stamey Mathematics Scholarship",
+    year: "2025 - 2026",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-9",
+    title: "Ray and Barbara Farmer Student Innovation Fund",
+    year: "2025",
+    institution: "Kansas State University"
+  },
+  {
+    id: "award-10",
+    title: "I-Center Graduate Scholar Award",
+    year: "2025 - 2026",
+    institution: "Kansas State University",
+    description: "Recognized for mentoring an undergraduate student in a faculty-supervised research project."
+  },
+  {
+    id: "award-11",
+    title: "Third Prize, Scientific Research Contest for Undergraduates (University Round)",
+    year: "2023",
+    institution: "Ho Chi Minh City University of Education"
+  },
+  {
+    id: "award-12",
+    title: "First Prize, Scientific Research Contest for Undergraduates (Department Round)",
+    year: "2023",
+    institution: "Ho Chi Minh City University of Education"
+  },
+  {
+    id: "award-13",
+    title: "Scholarships for Students with Excellent Academic Results",
+    year: "2019 - 2023",
+    institution: "Ho Chi Minh City University of Education"
+  },
+  {
+    id: "award-14",
+    title: "Scholarship for Students with Excellent Academic Results",
+    year: "2021",
+    institution: "Vietnam Institute for Advanced Studies in Mathematics"
   }
 ];
 
