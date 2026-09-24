@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, HeartHandshake } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { MENTORED_STUDENTS_LIST, MENTORING_ACTIVITIES_LIST } from '../data/academicData';
 
 export const Mentoring: React.FC = () => {
@@ -16,14 +16,6 @@ export const Mentoring: React.FC = () => {
   return (
     <section id="mentoring" className="py-8 sm:py-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-5 sm:mb-6 flex items-center gap-4">
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300">
-            <HeartHandshake className="h-6 w-6" aria-hidden="true" />
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic">
-            Mentoring & Service
-          </h2>
-        </div>
 
         <section aria-labelledby="mentoring-experience-heading" className="mb-6 sm:mb-7">
           <h3
