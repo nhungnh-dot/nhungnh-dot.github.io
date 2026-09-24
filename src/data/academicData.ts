@@ -84,7 +84,7 @@ export const AWARDS_HONORS_LIST: AwardHonor[] = [
     title: "Stromberg Outstanding Graduate Teaching Assistant in Teaching Award",
     year: "2026",
     institution: "Kansas State University",
-    description: "The highest honor awarded by the K-State Department of Mathematics for exceptional classroom instruction, passion, and dedication to students."
+    description: "The Department of Mathematics' highest graduate teaching assistant honor, recognizing exceptional classroom instruction and dedication to students."
   },
   {
     id: "award-2",
@@ -139,7 +139,7 @@ export const AWARDS_HONORS_LIST: AwardHonor[] = [
     title: "I-Center Graduate Scholar Award",
     year: "2025 - 2026",
     institution: "Kansas State University",
-    description: "Recognized for mentoring an undergraduate student in a faculty-supervised research project."
+    description: "Recognition for mentoring an undergraduate student through a faculty-supervised research project."
   },
   {
     id: "award-11",
