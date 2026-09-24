@@ -165,7 +165,7 @@ export const Teaching: React.FC = () => {
                               )}
                             </span>
                             {isGrad && (
-                              <span className="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 border border-amber-200/60 dark:border-amber-800/60">
+                              <span className="text-xs font-semibold px-1.5 py-0.2 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 border border-amber-200/60 dark:border-amber-800/60">
                                 Graduate
                               </span>
                             )}
