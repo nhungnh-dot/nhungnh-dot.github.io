@@ -564,71 +564,139 @@ export const TEACHING_LIST: CourseTeaching[] = [
 
 export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
   {
+    id: "ment-5",
+    studentName: "Noah Kelemen",
+    affiliation: "Kansas State University",
+    program: "Co-mentor, undergraduate research project",
+    term: "Fall 2026",
+    projects: ["A model-informed neural network approach to inverse source identification"]
+  },
+  {
+    id: "ment-6",
+    studentName: "Tristan Palnau",
+    affiliation: "Kansas State University",
+    program: "Mentor, Directed Reading Program",
+    term: "Fall 2026",
+    projects: ["From gradient descent to machine learning: An introduction to optimization"]
+  },
+  {
     id: "ment-1",
     studentName: "Giovanni Poggi-Corradini",
     affiliation: "Kansas State University",
-    program: "Directed Reading Program (DRP)",
+    program: "Mentor, Directed Reading Program",
     term: "Spring 2026",
-    projects: [
-      "Optimization strategies for neural networks: Gradient descent vs. Adam"
-    ]
+    projects: ["Optimization strategies for neural networks: Gradient descent vs. Adam"]
   },
   {
     id: "ment-2",
     studentName: "Vivian Nguyen",
     affiliation: "Kansas State University",
-    program: "Undergraduate Research Project & Directed Reading Program (DRP)",
-    term: "Spring 2025 & Fall 2025",
-    coMentors: "Co-mentored with Prof. Dinh-Liem Nguyen",
-    projects: [
-      "Inverse source problem with extended sources (Fall 2025)",
-      "Numerical integration and MATLAB scientific computing (Spring 2025)"
-    ]
+    program: "Mentor, Directed Reading Program; co-mentor, undergraduate research project",
+    term: "Spring – Fall 2025",
+    projects: ["Inverse source problem with extended sources", "Numerical integration and MATLAB"]
   },
   {
     id: "ment-3",
-    studentName: "Xavier Diamond, Selena Nguyen & Jordan Tierney",
-    affiliation: "UC Santa Cruz, Southern Connecticut State Univ & Colorado School of Mines",
-    program: "SUMaR REU (Summer Undergraduate Mathematics Research)",
+    studentName: "Xavier Diamond, Selena Nguyen, and Jordan Tierney",
+    affiliation: "University of California, Santa Cruz; Southern Connecticut State University; Colorado School of Mines",
+    program: "Co-mentor, Summer Undergraduate Mathematics Research (SUMaR) REU",
     term: "Summer 2025",
-    coMentors: "Co-mentored with Prof. Dinh-Liem Nguyen",
-    projects: [
-      "Direct and inverse problem in waveguides"
-    ]
+    projects: ["Direct and inverse problems in waveguides"]
   },
   {
     id: "ment-4",
     studentName: "Jayci Shepard",
     affiliation: "Kansas State University",
-    program: "Undergraduate Research Project & Directed Reading Program (DRP)",
+    program: "Mentor, Directed Reading Program; co-mentor, undergraduate research project",
     term: "Fall 2024",
-    coMentors: "Co-mentored with Prof. Dinh-Liem Nguyen",
-    projects: [
-      "Quantitative imaging of point-like targets"
-    ]
+    projects: ["Quantitative imaging of point-like targets"]
   }
 ];
 
 export const MENTORING_ACTIVITIES_LIST: MentoringActivity[] = [
   {
-    id: "act-1",
-    title: "SUMaR REU Computing Workshops",
-    role: "Tutorial Instructor",
-    term: "Summer 2025",
-    description: "Served as tutorial instructor for computing workshops, guiding REU students in scientific computing, MATLAB numerical methods, and mathematical simulations."
+    id: "act-4",
+    title: "Sonia Kovalevsky Day: Workshops for Middle School Students",
+    role: "Organizer",
+    term: "Spring 2025; Spring 2026",
+    description: "Kansas State University"
   },
   {
-    id: "act-2",
-    title: "Mathematics Department Recruitment Event",
+    id: "act-5",
+    title: "Peer to Peer Program",
+    role: "Mentor",
+    term: "2025; 2026",
+    description: "Kansas State University"
+  },
+  {
+    id: "act-6",
+    title: "Association of Women in Mathematics",
+    role: "Graduate Student Leadership",
+    term: "Fall 2025 – Fall 2026",
+    description: "Kansas State University"
+  },
+  {
+    id: "act-7",
+    title: "Math Kangaroo Competition",
+    role: "Proctor",
+    term: "Spring 2025; Spring 2026",
+    description: "Kansas State University"
+  },
+  {
+    id: "act-8",
+    title: "2026 AMS Graduate School Fair at the Joint Mathematics Meetings",
+    role: "Graduate Student Representative",
+    term: "Spring 2026"
+  },
+  {
+    id: "act-9",
+    title: "K-State Math Graduate Programs – Online Information Session",
+    role: "Graduate Student Representative",
+    term: "Spring 2026",
+    description: "Kansas State University"
+  },
+  {
+    id: "act-10",
+    title: "Mathematics Modeling Section at Theodore Roosevelt Elementary School",
+    role: "Assistant",
+    term: "Fall 2026",
+    description: "Manhattan, Kansas"
+  },
+  {
+    id: "act-11",
+    title: "38th Automorphic Forms Workshop",
+    role: "Assistant",
+    term: "Spring 2026"
+  },
+  {
+    id: "act-12",
+    title: "K-State Open House",
+    role: "Assistant",
+    term: "Spring 2026"
+  },
+  {
+    id: "act-13",
+    title: "Department of Mathematics Recruiting Event",
+    role: "Assistant",
+    term: "Spring 2025; Spring 2026",
+    description: "Kansas State University"
+  },
+  {
+    id: "act-14",
+    title: "Graduate Student Seminar Panel",
     role: "Panelist",
-    term: "Spring 2025 & Spring 2026",
-    description: "Invited panelist sharing perspectives on graduate research, coursework, and academic life with prospective graduate students."
+    term: "Fall 2026"
+  },
+  {
+    id: "act-15",
+    title: "Mathematics Recruitment Event Panel",
+    role: "Panelist",
+    term: "Spring 2025; Spring 2026"
   },
   {
     id: "act-3",
-    title: "SUMaR Undergraduate Research Panel",
+    title: "Summer Undergraduate Mathematics Research (SUMaR) Panel for Undergraduate Students",
     role: "Panelist",
-    term: "Summer 2024 & Summer 2025",
-    description: "Panelist providing career advice, research guidance, and graduate school preparation insights for national undergraduate REU participants."
+    term: "Summer 2024; Summer 2025"
   }
 ];
