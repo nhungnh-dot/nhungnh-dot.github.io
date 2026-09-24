@@ -4,9 +4,9 @@ import { MENTORED_STUDENTS_LIST, MENTORING_ACTIVITIES_LIST } from '../data/acade
 
 export const Mentoring: React.FC = () => {
   return (
-    <section id="mentoring" className="py-14 sm:py-20">
+    <section id="mentoring" className="py-10 sm:py-14">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-10">
+        <div className="mb-7 sm:mb-8">
           <div className="flex items-center gap-4">
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300">
               <HeartHandshake className="h-6 w-6" aria-hidden="true" />
@@ -20,17 +20,17 @@ export const Mentoring: React.FC = () => {
               </p>
             </div>
           </div>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-4 ml-0 sm:ml-16">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-2.5 ml-0 sm:ml-16">
             {MENTORED_STUDENTS_LIST.length} Research Cohorts
           </p>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-7 sm:mb-8">
           <h3 className="text-sm uppercase tracking-widest text-rose-700 dark:text-rose-300 font-bold mb-4">
             Undergraduate Research Mentorship
           </h3>
 
-          <div className="space-y-8 sm:space-y-10">
+          <div className="space-y-5 sm:space-y-6">
             {MENTORED_STUDENTS_LIST.map((student) => (
               <article
                 key={student.id}
@@ -84,7 +84,7 @@ export const Mentoring: React.FC = () => {
               Departmental Service & Panels
             </h3>
 
-            <div className="space-y-8 sm:space-y-10">
+            <div className="space-y-5 sm:space-y-6">
               {MENTORING_ACTIVITIES_LIST.map((act) => (
                 <article
                   key={act.id}

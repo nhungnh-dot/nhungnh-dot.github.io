@@ -73,9 +73,9 @@ export const Teaching: React.FC = () => {
   ];
 
   return (
-    <section id="teaching" className="py-14 sm:py-20">
+    <section id="teaching" className="py-10 sm:py-14">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-10">
+        <div className="mb-7 sm:mb-8">
           <div className="flex items-center gap-4">
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300">
               <GraduationCap className="h-6 w-6" aria-hidden="true" />
@@ -89,12 +89,12 @@ export const Teaching: React.FC = () => {
               </p>
             </div>
           </div>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-4 ml-0 sm:ml-16">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-2.5 ml-0 sm:ml-16">
             {teachingPositions.length} Instructional Roles · {TEACHING_LIST.length} Courses
           </p>
         </div>
 
-        <div className="space-y-10 sm:space-y-12">
+        <div className="space-y-7 sm:space-y-8">
           {teachingPositions.map((pos) => {
             const IconComponent = pos.icon;
             return (
@@ -116,7 +116,7 @@ export const Teaching: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="mt-5 space-y-5 sm:ml-[52px]">
+                <div className="mt-3.5 space-y-3 sm:ml-[52px]">
                   {pos.courses.map((course) => {
                     const isExpanded = expandedCourseId === course.id;
                     const isGrad = course.level === 'Graduate';

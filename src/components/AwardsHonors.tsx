@@ -4,9 +4,9 @@ import { AWARDS_HONORS_LIST } from '../data/academicData';
 
 export const AwardsHonors: React.FC = () => {
   return (
-    <section id="awards" className="py-14 sm:py-20">
+    <section id="awards" className="py-10 sm:py-14">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="mb-10">
+        <div className="mb-7 sm:mb-8">
           <div className="flex items-center gap-4">
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300">
               <Award className="h-6 w-6" aria-hidden="true" />
@@ -22,7 +22,7 @@ export const AwardsHonors: React.FC = () => {
           </div>
         </div>
 
-        <div className="space-y-8 sm:space-y-10">
+        <div className="space-y-5 sm:space-y-6">
           {AWARDS_HONORS_LIST.map((award) => (
             <article
               key={award.id}
@@ -36,7 +36,7 @@ export const AwardsHonors: React.FC = () => {
                   {award.institution}
                 </p>
                 {award.description && (
-                  <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mt-2.5 max-w-3xl">
+                  <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mt-1.5 max-w-3xl">
                     {award.description}
                   </p>
                 )}
