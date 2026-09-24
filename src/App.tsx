@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { ResearchPublications } from './components/ResearchPublications';
 import { TalksPresentations } from './components/TalksPresentations';
 import { Teaching } from './components/Teaching';
+import { AwardsHonors } from './components/AwardsHonors';
 import { Mentoring } from './components/Mentoring';
 import { EducationEmployment } from './components/EducationEmployment';
 import { ContactFooter } from './components/ContactFooter';
@@ -11,12 +12,13 @@ import { BibtexModal } from './components/BibtexModal';
 import { CvModal } from './components/CvModal';
 import { Publication } from './types';
 
-type SiteTab = 'about' | 'research' | 'teaching' | 'mentoring';
+type SiteTab = 'about' | 'research' | 'teaching' | 'awards' | 'mentoring';
 
 const SITE_TABS: Array<{ id: SiteTab; label: string }> = [
   { id: 'about', label: 'About' },
   { id: 'research', label: 'Research' },
   { id: 'teaching', label: 'Teaching' },
+  { id: 'awards', label: 'Awards & Honors' },
   { id: 'mentoring', label: 'Mentoring & Service' },
 ];
 
@@ -75,7 +77,7 @@ export default function App() {
             role="tablist"
             aria-label="Main sections"
           >
-            <div className="flex min-w-max sm:min-w-0 sm:grid sm:grid-cols-4">
+            <div className="flex min-w-max sm:min-w-0 sm:grid sm:grid-cols-5">
               {SITE_TABS.map((tab) => {
                 const isActive = activeTab === tab.id;
 
@@ -142,6 +144,16 @@ export default function App() {
             aria-labelledby="site-tab-teaching"
           >
             <Teaching />
+          </div>
+        )}
+
+        {activeTab === 'awards' && (
+          <div
+            id="site-panel-awards"
+            role="tabpanel"
+            aria-labelledby="site-tab-awards"
+          >
+            <AwardsHonors />
           </div>
         )}
 

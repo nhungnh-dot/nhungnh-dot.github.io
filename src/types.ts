@@ -52,6 +52,14 @@ export interface MentoringActivity {
   description?: string;
 }
 
+export interface AwardHonor {
+  id: string;
+  title: string;
+  year: string;
+  institution: string;
+  description?: string;
+}
+
 export interface EducationItem {
   id: string;
   degree: string;
