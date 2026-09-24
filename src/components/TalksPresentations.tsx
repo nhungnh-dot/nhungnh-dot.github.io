@@ -1,4 +1,5 @@
 import React from 'react';
+import { Calendar, Presentation } from 'lucide-react';
 import { TALKS_LIST } from '../data/academicData';
 import { Talk } from '../types';
 
@@ -8,23 +9,24 @@ export const TalksPresentations: React.FC = () => {
   const posterTalks = TALKS_LIST.filter(t => t.type === 'poster');
 
   const renderTalkList = (talks: Talk[]) => (
-    <ul className="divide-y divide-slate-200 dark:divide-slate-800 list-none">
+    <ul className="space-y-3 sm:space-y-4 list-none">
       {talks.map((talk) => (
-        <li key={talk.id} className="py-3.5 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+        <li key={talk.id} className="rounded-2xl bg-white/85 px-5 py-5 sm:px-6 sm:py-6 dark:bg-slate-900/55 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6 shadow-xs hover:shadow-sm transition-shadow">
           <div className="flex-1">
-            <span className="font-medium text-sm text-slate-900 dark:text-slate-100">
+            <span className="font-semibold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">
               {talk.event}
             </span>
             {talk.session && (
-              <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-0.5">
+              <p className="text-sm text-indigo-700 dark:text-indigo-300 mt-1.5 font-medium">
                 {talk.session}
               </p>
             )}
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
               {talk.location} {talk.format === 'virtual' && '(Virtual)'}
             </p>
           </div>
-          <span className="text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap flex-shrink-0 font-medium sm:text-right">
+          <span className="inline-flex items-center gap-2 self-start rounded-full bg-violet-50 px-3 py-1.5 text-sm text-violet-800 dark:bg-violet-950/45 dark:text-violet-300 whitespace-nowrap flex-shrink-0 font-semibold sm:text-right">
+            <Calendar className="w-4 h-4" aria-hidden="true" />
             {talk.date}
           </span>
         </li>
@@ -33,32 +35,41 @@ export const TalksPresentations: React.FC = () => {
   );
 
   return (
-    <section id="talks" className="py-12 sm:py-16 border-b border-slate-200 dark:border-slate-800">
+    <section id="talks" className="pt-8 pb-14 sm:pt-10 sm:pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic mb-6">
-          Talks & Presentations
-        </h2>
+        <div className="mb-10">
+          <div className="flex items-center gap-4">
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-violet-700 dark:bg-violet-950/40 dark:text-violet-300">
+              <Presentation className="h-6 w-6" aria-hidden="true" />
+            </span>
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic">
+                Talks & Presentations
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+                Invited talks, conference presentations, and research posters
+              </p>
+            </div>
+          </div>
+        </div>
 
-        {/* Invited Talks */}
-        <div className="mb-8">
-          <h3 className="text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-3">
+        <div className="mb-10">
+          <h3 className="text-sm uppercase tracking-widest text-violet-700 dark:text-violet-300 font-bold mb-4">
             Invited Talks & Minisymposia
           </h3>
           {renderTalkList(invitedTalks)}
         </div>
 
-        {/* Contributed Talks */}
-        <div className="mb-8">
-          <h3 className="text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-3">
+        <div className="mb-10">
+          <h3 className="text-sm uppercase tracking-widest text-violet-700 dark:text-violet-300 font-bold mb-4">
             Contributed Presentations
           </h3>
           {renderTalkList(contributedTalks)}
         </div>
 
-        {/* Poster Presentations */}
         {posterTalks.length > 0 && (
           <div>
-            <h3 className="text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-3">
+            <h3 className="text-sm uppercase tracking-widest text-violet-700 dark:text-violet-300 font-bold mb-4">
               Poster Presentations
             </h3>
             {renderTalkList(posterTalks)}
