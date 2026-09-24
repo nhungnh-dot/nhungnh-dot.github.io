@@ -259,115 +259,113 @@ export const TALKS_LIST: Talk[] = [
   // Invited Talks
   {
     id: "talk-inv-1",
-    title: "Invited Minisymposium Speaker",
-    event: "New York – New Jersey – Pennsylvania Section of SIAM Annual Meeting 2025",
+    title: "Invited Talk",
+    event: "New York-New Jersey-Pennsylvania Section of SIAM Annual Meeting 2025",
     date: "Oct 31 – Nov 2, 2025",
-    location: "The Pennsylvania State University, University Park, PA",
+    location: "The Pennsylvania State University, Pennsylvania",
     type: "invited",
     session: "Minisymposium",
     format: "in-person"
   },
   {
     id: "talk-inv-2",
-    title: "Graduate Research in Computational Mathematics",
+    title: "Invited Talk",
     event: "Department of Mathematics Recruiting Event",
     date: "Mar 6 – 9, 2025",
-    location: "Kansas State University, Manhattan, KS",
+    location: "Kansas State University, Kansas",
     type: "invited",
     format: "in-person"
   },
   {
     id: "talk-inv-3",
-    title: "Invited Minisymposium Speaker",
+    title: "Invited Talk",
     event: "The 9th Annual Meeting of the SIAM Central States Section",
     date: "Oct 5 – 6, 2024",
-    location: "University of Missouri - Kansas City, Kansas City, MO",
+    location: "University of Missouri-Kansas City, Missouri",
     type: "invited",
     session: "Minisymposium",
     format: "in-person"
   },
-
   // Contributed Talks
-  // {
-  //   id: "talk-con-1",
-  //   title: "Contributed Presentation",
-  //   event: "MATH FOR ALL Conference 2026",
-  //   date: "Apr 10 – 11, 2026",
-  //   location: "Virtual Conference",
-  //   type: "contributed",
-  //   format: "virtual"
-  // },
+  {
+    id: "talk-con-1",
+    title: "Contributed Talk",
+    event: "MATH FOR ALL Conference 2026",
+    date: "Apr 10 – 11, 2026",
+    location: "Virtual",
+    type: "contributed",
+    format: "virtual"
+  },
   {
     id: "talk-con-2",
-    title: "Contributed Presentation",
+    title: "Contributed Talk",
     event: "The Fifteenth Ohio River Analysis Meeting",
     date: "Mar 21 – 22, 2026",
-    location: "University of Kentucky, Lexington, KY",
+    location: "University of Kentucky, Kentucky",
     type: "contributed",
     format: "in-person"
   },
   {
     id: "talk-con-3",
-    title: "Contributed Presentation",
+    title: "Contributed Talk",
     event: "The 21st Prairie Analysis Seminar",
     date: "Nov 7 – 8, 2025",
-    location: "Kansas State University, Manhattan, KS",
+    location: "Kansas State University, Kansas",
     type: "contributed",
     format: "in-person"
   },
-  // {
-  //   id: "talk-con-4",
-  //   title: "Contributed Presentation",
-  //   event: "The 3rd UNC Greensboro Virtual PDE Conference",
-  //   date: "Oct 10 – 12, 2025",
-  //   location: "Virtual Conference",
-  //   type: "contributed",
-  //   format: "virtual"
-  // },
+  {
+    id: "talk-con-4",
+    title: "Contributed Talk",
+    event: "The 3rd UNC Greensboro Virtual PDE Conference",
+    date: "Oct 10 – 12, 2025",
+    location: "Virtual",
+    type: "contributed",
+    format: "virtual"
+  },
   {
     id: "talk-con-5",
-    title: "Contributed Presentation",
+    title: "Contributed Talk",
     event: "The 10th Annual Meeting of the SIAM Central States Section",
     date: "Oct 11 – 12, 2025",
-    location: "University of Arkansas, Fayetteville, AR",
+    location: "University of Arkansas, Arkansas",
     type: "contributed",
     format: "in-person"
   },
-  // {
-  //   id: "talk-con-6",
-  //   title: "Contributed Presentation",
-  //   event: "The 3rd International Mathematics and Statistics Student Research Symposium",
-  //   date: "Apr 12, 2025",
-  //   location: "Virtual Conference",
-  //   type: "contributed",
-  //   format: "virtual"
-  // },
+  {
+    id: "talk-con-6",
+    title: "Contributed Talk",
+    event: "The 3rd International Mathematics and Statistics Student Research Symposium",
+    date: "Apr 12, 2025",
+    location: "Virtual",
+    type: "contributed",
+    format: "virtual"
+  },
   {
     id: "talk-con-7",
-    title: "Contributed Presentation",
+    title: "Contributed Talk",
     event: "AMS 2025 Spring Central Sectional Meeting",
     date: "Mar 29 – 30, 2025",
-    location: "University of Kansas, Lawrence, KS",
+    location: "University of Kansas, Kansas",
     type: "contributed",
     format: "in-person"
   },
-
   // Poster Presentations
   {
     id: "talk-pos-1",
-    title: "Poster Presentation: Neural Network Architectures for Inverse Problems",
+    title: "Poster Presentation",
     event: "2025 K-State AI Symposium: Humans and the Machine",
     date: "Oct 14 – 16, 2025",
-    location: "Kansas State University, Manhattan, KS",
+    location: "Kansas State University, Kansas",
     type: "poster",
     format: "in-person"
   },
   {
     id: "talk-pos-2",
-    title: "Poster Presentation: Mathematical Analysis of Wave Scattering",
+    title: "Poster Presentation",
     event: "Prairie Analysis Seminar",
     date: "Oct 25 – 26, 2024",
-    location: "University of Kansas, Lawrence, KS",
+    location: "University of Kansas, Kansas",
     type: "poster",
     format: "in-person"
   }
