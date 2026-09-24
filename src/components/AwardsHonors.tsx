@@ -22,11 +22,11 @@ export const AwardsHonors: React.FC = () => {
           </div>
         </div>
 
-        <div className="space-y-3 sm:space-y-4">
+        <div className="space-y-8 sm:space-y-10">
           {AWARDS_HONORS_LIST.map((award) => (
             <article
               key={award.id}
-              className="rounded-2xl bg-white/85 px-5 py-5 sm:px-6 sm:py-6 dark:bg-slate-900/55 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6 shadow-xs hover:shadow-sm transition-shadow"
+              className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6"
             >
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">

@@ -30,11 +30,11 @@ export const Mentoring: React.FC = () => {
             Undergraduate Research Mentorship
           </h3>
 
-          <div className="space-y-3 sm:space-y-4">
+          <div className="space-y-8 sm:space-y-10">
             {MENTORED_STUDENTS_LIST.map((student) => (
               <article
                 key={student.id}
-                className="rounded-2xl bg-white/85 px-5 py-5 sm:px-6 sm:py-6 dark:bg-slate-900/55 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6 shadow-xs hover:shadow-sm transition-shadow"
+                className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6"
               >
                 <div className="space-y-2 flex-1 min-w-0">
                   <div className="flex items-baseline gap-2 flex-wrap">
@@ -84,11 +84,11 @@ export const Mentoring: React.FC = () => {
               Departmental Service & Panels
             </h3>
 
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-8 sm:space-y-10">
               {MENTORING_ACTIVITIES_LIST.map((act) => (
                 <article
                   key={act.id}
-                  className="rounded-2xl bg-white/85 px-5 py-5 sm:px-6 sm:py-6 dark:bg-slate-900/55 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6 shadow-xs hover:shadow-sm transition-shadow"
+                  className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-6"
                 >
                   <div className="space-y-1.5 flex-1 min-w-0">
                     <div className="flex items-center gap-2 flex-wrap">

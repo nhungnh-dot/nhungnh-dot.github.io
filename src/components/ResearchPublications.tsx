@@ -15,7 +15,7 @@ export const ResearchPublications: React.FC<ResearchProps> = () => {
       <li
         key={pub.id}
         id={`publication-${pub.id}`}
-        className="rounded-2xl bg-white/85 px-5 py-5 sm:px-6 sm:py-6 dark:bg-slate-900/55 shadow-xs hover:shadow-sm transition-shadow"
+        className="py-1"
       >
         <div className="flex flex-col gap-2">
           <h4 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">
@@ -81,7 +81,7 @@ export const ResearchPublications: React.FC<ResearchProps> = () => {
           <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-4">
             Preprints & Working Papers
           </h3>
-          <ol className="space-y-3 sm:space-y-4 list-none">
+          <ol className="space-y-8 sm:space-y-10 list-none">
             {preprints.map(renderPubItem)}
           </ol>
         </div>
@@ -90,7 +90,7 @@ export const ResearchPublications: React.FC<ResearchProps> = () => {
           <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-4">
             Journal Articles
           </h3>
-          <ol className="space-y-3 sm:space-y-4 list-none">
+          <ol className="space-y-8 sm:space-y-10 list-none">
             {published.map(renderPubItem)}
           </ol>
         </div>

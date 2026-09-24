@@ -94,14 +94,13 @@ export const Teaching: React.FC = () => {
           </p>
         </div>
 
-        <div className="space-y-3 sm:space-y-4">
+        <div className="space-y-10 sm:space-y-12">
           {teachingPositions.map((pos) => {
             const IconComponent = pos.icon;
             return (
               <article
                 key={pos.id}
                 id={`teaching-position-${pos.id}`}
-                className="rounded-2xl bg-white/85 px-5 py-5 sm:px-6 sm:py-6 dark:bg-slate-900/55 shadow-xs hover:shadow-sm transition-shadow"
               >
                 <div className="flex items-start gap-3">
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 flex-shrink-0">
@@ -117,12 +116,12 @@ export const Teaching: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="mt-5 space-y-3 sm:ml-[52px]">
+                <div className="mt-5 space-y-5 sm:ml-[52px]">
                   {pos.courses.map((course) => {
                     const isExpanded = expandedCourseId === course.id;
                     const isGrad = course.level === 'Graduate';
                     return (
-                      <div key={course.id} className="rounded-xl bg-slate-50/90 px-4 py-3.5 dark:bg-slate-800/45">
+                      <div key={course.id}>
                         <div
                           onClick={() => course.description && toggleCourseDetails(course.id)}
                           className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 ${course.description ? 'cursor-pointer select-none' : ''}`}
@@ -165,7 +164,7 @@ export const Teaching: React.FC = () => {
                         </div>
 
                         {isExpanded && course.description && (
-                          <p className="mt-3 pt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/70 dark:border-slate-700/70">
+                          <p className="mt-2 pt-1 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                             <span className="font-semibold text-slate-800 dark:text-slate-200">Course Scope & Details: </span>
                             {course.description}
                           </p>
