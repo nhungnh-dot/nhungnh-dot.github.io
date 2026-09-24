@@ -169,10 +169,30 @@ export const AWARDS_HONORS_LIST: AwardHonor[] = [
 
 export const PUBLICATIONS_LIST: Publication[] = [
   {
+    id: "pub-4",
+    title: "A model-informed deep learning algorithm for solving the phaseless inverse scattering problem",
+    authors: ["Dinh-Liem Nguyen", "Nhung H. Nguyen", "Aravinth Ravi"],
+    venue: "Submitted",
+    year: "",
+    status: "submitted",
+    tags: [],
+    bibtex: ""
+  },
+  {
+    id: "pub-5",
+    title: "Inverse scattering from nonlinear objects in scalar waveguides",
+    authors: ["Dinh-Liem Nguyen", "Nhung H. Nguyen", "Thi-Phong Nguyen"],
+    venue: "Submitted",
+    year: "",
+    status: "submitted",
+    tags: [],
+    bibtex: ""
+  },
+  {
     id: "pub-1",
     title: "A spectral model-informed neural network for inverse source problems",
     authors: ["Dinh-Liem Nguyen", "Nhung H. Nguyen", "Aravinth Ravi"],
-    venue: "Submitted to peer-reviewed journal",
+    venue: "Submitted",
     year: 2026,
     status: "submitted",
     tags: ["Inverse Source Problems", "PINNs", "Spectral Methods", "Scientific ML"],
@@ -188,7 +208,7 @@ export const PUBLICATIONS_LIST: Publication[] = [
     id: "pub-2",
     title: "Identifying defective units in infinite periodic arrays of point sources",
     authors: ["Dinh-Liem Nguyen", "Nhung H. Nguyen", "Thi-Phong Nguyen"],
-    venue: "Inverse Problems, Vol. 42, 085013",
+    venue: "Inverse Problems, 42, 085013, 2026",
     year: 2026,
     status: "published",
     doi: "10.1088/1361-6420/ae9980",
@@ -208,7 +228,7 @@ export const PUBLICATIONS_LIST: Publication[] = [
     id: "pub-3",
     title: "Regularity for the steady Stokes-type flow of incompressible Newtonian fluids in some generalized function settings",
     authors: ["Minh-Phuong Tran", "Thanh-Nhan Nguyen", "Hong-Nhung Nguyen"],
-    venue: "Nonlinear Analysis: Real World Applications, Vol. 77, 104049",
+    venue: "Nonlinear Analysis: Real World Applications, 77, 104049, 2024",
     year: 2024,
     status: "published",
     doi: "10.1016/j.nonrwa.2023.104049",
@@ -246,13 +266,12 @@ export const TALKS_LIST: Talk[] = [
     date: "Mar 6 – 9, 2025",
     location: "Kansas State University, Manhattan, KS",
     type: "invited",
-    session: "Graduate Student Research Panel & Seminar",
     format: "in-person"
   },
   {
     id: "talk-inv-3",
     title: "Invited Minisymposium Speaker",
-    event: "The 9th Annual Meeting of SIAM Central States Section",
+    event: "The 9th Annual Meeting of the SIAM Central States Section",
     date: "Oct 5 – 6, 2024",
     location: "University of Missouri - Kansas City, Kansas City, MO",
     type: "invited",
@@ -300,7 +319,7 @@ export const TALKS_LIST: Talk[] = [
   {
     id: "talk-con-5",
     title: "Contributed Presentation",
-    event: "The 10th Annual Meeting of SIAM Central States Section",
+    event: "The 10th Annual Meeting of the SIAM Central States Section",
     date: "Oct 11 – 12, 2025",
     location: "University of Arkansas, Fayetteville, AR",
     type: "contributed",
@@ -318,7 +337,7 @@ export const TALKS_LIST: Talk[] = [
   {
     id: "talk-con-7",
     title: "Contributed Presentation",
-    event: "AMS Sectional Meeting Program - 2025 Spring Central Sectional Meeting",
+    event: "AMS 2025 Spring Central Sectional Meeting",
     date: "Mar 29 – 30, 2025",
     location: "University of Kansas, Lawrence, KS",
     type: "contributed",
