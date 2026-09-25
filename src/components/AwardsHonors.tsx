@@ -25,7 +25,7 @@ export const AwardsHonors: React.FC = () => {
                         {award.title}
                       </p>
                       {award.description && (
-                        <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        <p className="mt-0 text-xs text-slate-500 dark:text-slate-400 leading-snug">
                           {award.description}
                         </p>
                       )}
