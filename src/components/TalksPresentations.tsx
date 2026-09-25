@@ -54,7 +54,7 @@ export const TalksPresentations: React.FC = () => {
           <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-violet-700 dark:bg-violet-950/40 dark:text-violet-300">
             <Presentation className="h-6 w-6" aria-hidden="true" />
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-slate-50 font-serif-academic">
             Conferences and Seminar Talks
           </h2>
         </div>
