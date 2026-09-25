@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
               </a>.
             </p>
 
-            <p className="mt-2.5 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="mt-2.5 text-base text-slate-600 dark:text-slate-300 leading-relaxed">
               {PERSONAL_INFO.researchSummary}
             </p>
 
@@ -58,7 +58,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
               {PERSONAL_INFO.researchKeywords.map((kw, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/80"
+                  className="px-3 py-1 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/80"
                 >
                   {kw}
                 </span>
@@ -69,7 +69,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
             <div className="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-3">
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-colors"
               >
                 <Mail className="w-3.5 h-3.5" />
                 <span>{PERSONAL_INFO.email}</span>
@@ -79,7 +79,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
                 href={PERSONAL_INFO.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 <Linkedin className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
                 <span>LinkedIn</span>
@@ -89,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal, onNavigate }) => {
                 href="https://scholar.google.com/citations?hl=en&user=mjpMbqoAAAAJ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 <GraduationCap className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
                 <span>Google Scholar</span>
