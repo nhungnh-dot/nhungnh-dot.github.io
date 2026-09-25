@@ -12,7 +12,7 @@ export const EducationEmployment: React.FC = () => {
 
         {/* Education */}
         <div className="mb-6">
-          <h3 className="text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-3">
+          <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-3">
             Education
           </h3>
           <ul className="divide-y divide-slate-200 dark:divide-slate-800 list-none">
@@ -20,15 +20,15 @@ export const EducationEmployment: React.FC = () => {
               <li key={edu.id} className="py-2.5 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-sm text-slate-900 dark:text-slate-100">
+                    <span className="font-semibold text-base text-slate-900 dark:text-slate-100">
                       {edu.degree}
                     </span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400">
+                    <span className="text-sm text-slate-500 dark:text-slate-400">
                       — {edu.institution} ({edu.location})
                     </span>
                   </div>
                   {edu.details && (
-                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
+                    <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
                       {edu.details}
                     </p>
                   )}
@@ -44,7 +44,7 @@ export const EducationEmployment: React.FC = () => {
         {/* Appointments at KSU */}
         <div className="pt-1">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
+            <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
               Appointments (Kansas State University)
             </h3>
             <span className="text-xs text-slate-400 dark:text-slate-500 font-medium hidden sm:inline">
@@ -60,28 +60,28 @@ export const EducationEmployment: React.FC = () => {
               >
                 <div>
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <h4 className="font-semibold text-sm text-slate-900 dark:text-slate-100 font-serif-academic">
+                    <h4 className="font-semibold text-base text-slate-900 dark:text-slate-100 font-serif-academic">
                       {job.title}
                     </h4>
-                    <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap border border-slate-200/60 dark:border-slate-700/60">
+                    <span className="px-2 py-0.5 text-sm font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap border border-slate-200/60 dark:border-slate-700/60">
                       {job.type}
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
                     {job.description}
                   </p>
                 </div>
 
                 <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80">
-                  <span className="text-xs uppercase tracking-wider font-semibold text-slate-400 dark:text-slate-500 block mb-1.5">
+                  <span className="text-sm uppercase tracking-wider font-semibold text-slate-400 dark:text-slate-500 block mb-1.5">
                     Active Terms
                   </span>
                   <div className="flex flex-wrap gap-1">
                     {job.semesters.map((sem, sIdx) => (
                       <span
                         key={sIdx}
-                        className="px-2 py-0.5 rounded text-xs font-medium bg-indigo-50/70 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/50"
+                        className="px-2 py-0.5 rounded text-sm font-medium bg-indigo-50/70 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/50"
                       >
                         {sem}
                       </span>
