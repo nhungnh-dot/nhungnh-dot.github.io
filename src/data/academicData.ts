@@ -37,8 +37,7 @@ export const EDUCATION_LIST: EducationItem[] = [
     institution: "Kansas State University",
     location: "Manhattan, Kansas, USA",
     period: "2024 – Present (Expected Summer 2028)",
-    link: "https://www.math.ksu.edu/",
-    details: "Supervised by Prof. Dinh-Liem Nguyen. Specializing in computational inverse problems, imaging, and scientific computing."
+    link: "https://www.math.ksu.edu/"
   },
   {
     id: "hcmue-bs",
@@ -46,8 +45,7 @@ export const EDUCATION_LIST: EducationItem[] = [
     institution: "Ho Chi Minh City University of Education",
     location: "Ho Chi Minh City, Viet Nam",
     period: "Graduated Spring 2023",
-    link: "https://hcmue.edu.vn/vi/khoa-bo-mon/khoa-toan-tin",
-    details: "Department of Mathematics & Computer Science. Graduated with high honors; research in fluid dynamics and partial differential equations."
+    link: "https://hcmue.edu.vn/vi/khoa-bo-mon/khoa-toan-tin"
   }
 ];
 
