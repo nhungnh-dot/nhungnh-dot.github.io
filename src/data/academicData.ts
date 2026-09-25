@@ -56,7 +56,7 @@ export const EMPLOYMENT_DATA = [
     description: "Conducting research on inverse scattering, spectral neural networks, as well as exploring applications of machine learning and artificial intelligence in education."
   },
   {
-    title: "REU Graduate Assistant",
+    title: "NSF REU Graduate Assistant",
     type: "Mentoring & Research",
     description: "Assisting faculty and co-mentoring undergraduate cohorts in the Summer Undergraduate Mathematics Research (SUMaR) REU program."
   },
