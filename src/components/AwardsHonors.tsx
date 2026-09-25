@@ -13,16 +13,16 @@ export const AwardsHonors: React.FC = () => {
               <h2 className="mb-3 text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
                 {institution}
               </h2>
-              <div className="space-y-3 sm:space-y-3.5">
+              <ul className="space-y-2.5 sm:space-y-3">
                 {AWARDS_HONORS_LIST.filter(award => award.institution === institution).map(award => (
-                  <article
+                  <li
                     key={award.id}
-                    className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4"
+                    className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-0.5 sm:gap-4"
                   >
                     <div className="min-w-0 flex-1">
-                      <h3 className="text-sm sm:text-base font-semibold text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">
+                      <p className="text-sm sm:text-base font-normal text-slate-800 dark:text-slate-200 leading-relaxed">
                         {award.title}
-                      </h3>
+                      </p>
                       {award.description && (
                         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                           {award.description}
@@ -32,9 +32,9 @@ export const AwardsHonors: React.FC = () => {
                     <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400 sm:pl-4">
                       {award.year}
                     </span>
-                  </article>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </section>
           ))}
         </div>
