@@ -1,97 +1,82 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
 import { EDUCATION_LIST, EMPLOYMENT_DATA } from '../data/academicData';
 
 export const EducationEmployment: React.FC = () => {
   return (
     <section id="experience" className="py-8 sm:py-10 border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic mb-5">
-          Education & Appointments
-        </h2>
-
-        {/* Education */}
-        <div className="mb-6">
-          <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold mb-3">
+        <section aria-labelledby="education-heading">
+          <h2
+            id="education-heading"
+            className="mb-4 text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic"
+          >
             Education
-          </h3>
-          <ul className="divide-y divide-slate-200 dark:divide-slate-800 list-none">
+          </h2>
+
+          <ul className="space-y-4">
             {EDUCATION_LIST.map((edu) => (
-              <li key={edu.id} className="py-2.5 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="font-semibold text-base text-slate-900 dark:text-slate-100">
-                      {edu.degree}
-                    </span>
-                    <span className="text-sm text-slate-500 dark:text-slate-400">
-                      — {edu.institution} ({edu.location})
-                    </span>
-                  </div>
+              <li
+                key={edu.id}
+                className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-6"
+              >
+                <div className="min-w-0">
+                  <p className="text-base font-semibold text-slate-900 dark:text-slate-100">
+                    {edu.degree}
+                  </p>
+                  <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-400">
+                    {edu.institution} · {edu.location}
+                  </p>
                   {edu.details && (
-                    <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
+                    <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                       {edu.details}
                     </p>
                   )}
                 </div>
-                <span className="text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap flex-shrink-0 font-medium sm:text-right">
+                <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400 sm:text-right">
                   {edu.period}
                 </span>
               </li>
             ))}
           </ul>
-        </div>
+        </section>
 
-        {/* Appointments at KSU */}
-        <div className="pt-1">
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
-              Appointments (Kansas State University)
-            </h3>
-            <span className="text-sm text-slate-400 dark:text-slate-500 font-medium hidden sm:inline">
-              Department of Mathematics
-            </span>
-          </div>
+        <section className="mt-8" aria-labelledby="appointments-heading">
+          <h2
+            id="appointments-heading"
+            className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic"
+          >
+            Appointments
+          </h2>
+          <p className="mt-1 mb-4 text-sm text-slate-500 dark:text-slate-400">
+            Department of Mathematics, Kansas State University
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <ul className="space-y-4">
             {EMPLOYMENT_DATA.map((job, idx) => (
-              <div
+              <li
                 key={idx}
-                className="p-4 rounded-xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-xs hover:border-indigo-300 dark:hover:border-indigo-800/80 transition-all flex flex-col justify-between"
+                className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-6"
               >
-                <div>
-                  <div className="flex items-start justify-between gap-2 mb-2">
-                    <h4 className="font-semibold text-base text-slate-900 dark:text-slate-100 font-serif-academic">
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                    <p className="text-base font-semibold text-slate-900 dark:text-slate-100">
                       {job.title}
-                    </h4>
-                    <span className="px-2 py-0.5 text-sm font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap border border-slate-200/60 dark:border-slate-700/60">
+                    </p>
+                    <span className="text-sm text-slate-500 dark:text-slate-400">
                       {job.type}
                     </span>
                   </div>
-
-                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+                  <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                     {job.description}
                   </p>
                 </div>
-
-                <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80">
-                  <span className="text-sm uppercase tracking-wider font-semibold text-slate-400 dark:text-slate-500 block mb-1.5">
-                    Active Terms
-                  </span>
-                  <div className="flex flex-wrap gap-1">
-                    {job.semesters.map((sem, sIdx) => (
-                      <span
-                        key={sIdx}
-                        className="px-2 py-0.5 rounded text-sm font-medium bg-indigo-50/70 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/50"
-                      >
-                        {sem}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+                <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400 sm:text-right">
+                  {job.semesters.join(' · ')}
+                </span>
+              </li>
             ))}
-          </div>
-        </div>
+          </ul>
+        </section>
       </div>
     </section>
   );
