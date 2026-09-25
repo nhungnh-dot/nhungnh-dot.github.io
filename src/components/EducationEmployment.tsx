@@ -1,4 +1,5 @@
 import React from 'react';
+import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
 import { EDUCATION_LIST, EMPLOYMENT_DATA } from '../data/academicData';
 
 export const EducationEmployment: React.FC = () => {
@@ -6,12 +7,17 @@ export const EducationEmployment: React.FC = () => {
     <section id="experience" className="py-8 sm:py-10 border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <section aria-labelledby="education-heading">
-          <h2
-            id="education-heading"
-            className="mb-4 text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic"
-          >
-            Education
-          </h2>
+          <div className="mb-4 flex items-center gap-3">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-50 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-300">
+              <GraduationCap className="h-4.5 w-4.5" aria-hidden="true" />
+            </span>
+            <h2
+              id="education-heading"
+              className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic"
+            >
+              Education
+            </h2>
+          </div>
 
           <ul className="space-y-4">
             {EDUCATION_LIST.map((edu) => (
@@ -41,12 +47,17 @@ export const EducationEmployment: React.FC = () => {
         </section>
 
         <section className="mt-8" aria-labelledby="appointments-heading">
-          <h2
-            id="appointments-heading"
-            className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic"
-          >
-            Appointments
-          </h2>
+          <div className="flex items-center gap-3">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+              <BriefcaseBusiness className="h-4.5 w-4.5" aria-hidden="true" />
+            </span>
+            <h2
+              id="appointments-heading"
+              className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic"
+            >
+              Appointments
+            </h2>
+          </div>
           <p className="mt-1 mb-4 text-sm text-slate-500 dark:text-slate-400">
             Department of Mathematics, Kansas State University
           </p>
