@@ -58,14 +58,9 @@ export const EducationEmployment: React.FC = () => {
                 className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-6"
               >
                 <div className="min-w-0">
-                  <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                    <p className="text-base font-semibold text-slate-900 dark:text-slate-100">
-                      {job.title}
-                    </p>
-                    <span className="text-sm text-slate-500 dark:text-slate-400">
-                      {job.type}
-                    </span>
-                  </div>
+                  <p className="text-base font-normal text-slate-800 dark:text-slate-200">
+                    {job.title}
+                  </p>
                   <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                     {job.description}
                   </p>
