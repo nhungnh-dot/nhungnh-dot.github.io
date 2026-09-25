@@ -14,7 +14,7 @@ export const ResearchPublications: React.FC<ResearchProps> = () => (
         <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300">
           <BookOpen className="h-6 w-6" aria-hidden="true" />
         </span>
-        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-50 font-serif-academic">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-slate-50 font-serif-academic">
           Publications
         </h2>
       </div>
