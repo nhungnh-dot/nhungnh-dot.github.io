@@ -10,7 +10,7 @@ export const AwardsHonors: React.FC = () => {
         <div className="space-y-6 sm:space-y-7">
           {institutions.map(institution => (
             <section key={institution} aria-label={institution}>
-              <h2 className="mb-3 text-sm font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              <h2 className="mb-3 text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-300">
                 {institution}
               </h2>
               <ul className="space-y-3">
@@ -27,7 +27,7 @@ export const AwardsHonors: React.FC = () => {
                         </span>
                       </div>
                       {award.description && (
-                        <p className="mt-1 text-sm font-normal text-slate-600 dark:text-slate-400 leading-relaxed">
+                        <p className="mt-1 text-xs font-normal text-slate-600 dark:text-slate-400 leading-relaxed">
                           {award.description}
                         </p>
                       )}
