@@ -106,7 +106,7 @@ export const Teaching: React.FC = () => {
           )}
         </div>
 
-        <div className="flex items-center gap-2 flex-shrink-0 text-base text-slate-500 dark:text-slate-400">
+        <div className="flex items-center gap-2 flex-shrink-0 text-sm text-slate-500 dark:text-slate-400">
           <Calendar className="w-4 h-4" aria-hidden="true" />
           <span>{course.term}</span>
         </div>
