@@ -54,7 +54,7 @@ export const EducationEmployment: React.FC = () => {
           <ul className="space-y-4">
             {EMPLOYMENT_DATA.map((job, idx) => (
               <li key={idx}>
-                <p className="text-base font-normal text-slate-800 dark:text-slate-200">
+                <p className="text-base font-semibold text-slate-900 dark:text-slate-100">
                   {job.title}
                 </p>
                 <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
