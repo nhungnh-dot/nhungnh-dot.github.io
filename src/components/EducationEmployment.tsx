@@ -53,21 +53,13 @@ export const EducationEmployment: React.FC = () => {
 
           <ul className="space-y-4">
             {EMPLOYMENT_DATA.map((job, idx) => (
-              <li
-                key={idx}
-                className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-6"
-              >
-                <div className="min-w-0">
-                  <p className="text-base font-normal text-slate-800 dark:text-slate-200">
-                    {job.title}
-                  </p>
-                  <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    {job.description}
-                  </p>
-                </div>
-                <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400 sm:text-right">
-                  {job.semesters.join(' · ')}
-                </span>
+              <li key={idx}>
+                <p className="text-base font-normal text-slate-800 dark:text-slate-200">
+                  {job.title}
+                </p>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  {job.description}
+                </p>
               </li>
             ))}
           </ul>
