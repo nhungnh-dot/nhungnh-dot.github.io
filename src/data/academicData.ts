@@ -54,25 +54,21 @@ export const EDUCATION_LIST: EducationItem[] = [
 export const EMPLOYMENT_DATA = [
   {
     title: "Graduate Research Assistant",
-    semesters: ["Spring 2025", "Fall 2026"],
     type: "Research",
     description: "Conducting research on inverse scattering, spectral neural networks, as well as exploring applications of machine learning and artificial intelligence in education."
   },
   {
     title: "REU Graduate Assistant",
-    semesters: ["Summer 2025"],
     type: "Mentoring & Research",
     description: "Assisting faculty and co-mentoring undergraduate cohorts in the Summer Undergraduate Mathematics Research (SUMaR) REU program."
   },
   {
     title: "Graduate Organizational Assistant",
-    semesters: ["Fall 2025", "Spring 2026"],
     type: "Administration & Service",
     description: "Departmental academic coordination, colloquium/seminar event support, and recruitment initiatives."
   },
   {
     title: "Graduate Teaching Assistant",
-    semesters: ["Spring 2024", "Summer 2024", "Fall 2024", "Summer 2025", "Fall 2025", "Spring 2026", "Summer 2026"],
     type: "Teaching",
     description: "Serving as primary lecturer, recitation leader, and lab instructor across calculus, differential equations, and linear algebra courses."
   }
