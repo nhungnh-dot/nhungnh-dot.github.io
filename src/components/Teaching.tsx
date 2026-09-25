@@ -77,11 +77,11 @@ export const Teaching: React.FC = () => {
         <div className="min-w-0">
           <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
             {course.code && (
-              <span className="font-mono-code font-bold text-sm text-slate-600 dark:text-slate-300">
+              <span className="font-mono-code font-bold text-base text-slate-600 dark:text-slate-300">
                 {course.code}
               </span>
             )}
-            <span className="font-medium text-sm text-slate-900 dark:text-slate-100 font-serif-academic">
+            <span className="font-medium text-base text-slate-900 dark:text-slate-100 font-serif-academic">
               {course.title}
             </span>
           </div>
@@ -106,7 +106,7 @@ export const Teaching: React.FC = () => {
           )}
         </div>
 
-        <div className="flex items-center gap-2 flex-shrink-0 text-sm text-slate-500 dark:text-slate-400">
+        <div className="flex items-center gap-2 flex-shrink-0 text-base text-slate-500 dark:text-slate-400">
           <Calendar className="w-4 h-4" aria-hidden="true" />
           <span>{course.term}</span>
         </div>
@@ -127,7 +127,7 @@ export const Teaching: React.FC = () => {
                   <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 flex-shrink-0">
                     <IconComponent className="w-4.5 h-4.5" aria-hidden="true" />
                   </span>
-                  <h3 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
+                  <h3 className="text-lg sm:text-xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
                     {pos.title}
                   </h3>
                 </div>
@@ -144,7 +144,7 @@ export const Teaching: React.FC = () => {
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 flex-shrink-0">
                 <Award className="w-4.5 h-4.5" aria-hidden="true" />
               </span>
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
+              <h3 className="text-lg sm:text-xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
                 Additional Teaching Activities
               </h3>
             </div>
@@ -161,7 +161,7 @@ export const Teaching: React.FC = () => {
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 flex-shrink-0">
                 <School className="w-4.5 h-4.5" aria-hidden="true" />
               </span>
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
+              <h3 className="text-lg sm:text-xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
                 Pedagogical Internships
               </h3>
             </div>
