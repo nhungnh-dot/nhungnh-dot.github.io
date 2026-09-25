@@ -48,7 +48,7 @@ export const EducationEmployment: React.FC = () => {
 
         <section className="mt-8" aria-labelledby="appointments-heading">
           <div className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-violet-50 text-violet-700 dark:bg-violet-950/50 dark:text-violet-300">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-violet-100 text-violet-700 ring-1 ring-violet-200 dark:bg-violet-900/50 dark:text-violet-200 dark:ring-violet-800">
               <BriefcaseBusiness className="h-4.5 w-4.5" aria-hidden="true" />
             </span>
             <h2
