@@ -13,11 +13,11 @@ export const Hero: React.FC<HeroProps> = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
           <div className="flex-shrink-0">
-            <div className="w-36 h-36 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800">
+            <div className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-2 border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 shadow-sm">
               <img
                 src={PERSONAL_INFO.profileImage}
                 alt={PERSONAL_INFO.name}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-[center_18%]"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   if (!target.src.includes('assets/')) {
