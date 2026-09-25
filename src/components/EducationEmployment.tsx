@@ -33,7 +33,7 @@ export const EducationEmployment: React.FC = () => {
                     </p>
                   )}
                 </div>
-                <span className="text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap flex-shrink-0 font-medium sm:text-right">
+                <span className="text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap flex-shrink-0 font-medium sm:text-right">
                   {edu.period}
                 </span>
               </li>
@@ -47,7 +47,7 @@ export const EducationEmployment: React.FC = () => {
             <h3 className="text-sm uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
               Appointments (Kansas State University)
             </h3>
-            <span className="text-xs text-slate-400 dark:text-slate-500 font-medium hidden sm:inline">
+            <span className="text-sm text-slate-400 dark:text-slate-500 font-medium hidden sm:inline">
               Department of Mathematics
             </span>
           </div>
