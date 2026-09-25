@@ -19,7 +19,7 @@ export const PERSONAL_INFO = {
   profileImage: `${import.meta.env.BASE_URL}profile-image.png`,
   logoImage: `${import.meta.env.BASE_URL}logo.png`,
   bio: "Welcome to my homepage! I am a PhD Candidate in Mathematics at Kansas State University, working under the supervision of Prof. Dinh-Liem Nguyen. My research focuses on computational inverse problems, imaging, inverse scattering, and source reconstruction.",
-  researchSummary: "My research interests lie in inverse scattering problems for partial differential equations, computational imaging, artificial intelligence, and machine learning. My primary research focuses on developing mathematical and computational methods for inverse scattering and source reconstruction, with applications to acoustic and electromagnetic waves. I am also interested in AI and machine learning and their applications to scientific computing.",
+  researchSummary: "My research centers on inverse scattering and source reconstruction for partial differential equations. I am interested in the integration of artificial intelligence and machine learning techniques into scientific computing.",
   researchKeywords: [
     "Inverse Problems",
     "Computational Imaging",
