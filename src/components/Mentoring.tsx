@@ -112,12 +112,12 @@ export const Mentoring: React.FC = () => {
                         <div className="min-w-0">
                           <p className="text-sm sm:text-base font-medium text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">
                             {activity.title}
+                            {activity.description && (
+                              <span className="ml-1 font-normal text-slate-500 dark:text-slate-400">
+                                ({serviceDescriptionAbbreviations[activity.description] ?? activity.description})
+                              </span>
+                            )}
                           </p>
-                          {activity.description && (
-                            <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                              {serviceDescriptionAbbreviations[activity.description] ?? activity.description}
-                            </p>
-                          )}
                         </div>
                         <span className="inline-flex items-center gap-2 flex-shrink-0 text-sm text-slate-500 dark:text-slate-400">
                           <Calendar className="w-4 h-4" aria-hidden="true" />
