@@ -36,7 +36,9 @@ export const AwardsHonors: React.FC = () => {
                       </p>
                       {award.description && (
                         <p className="mt-0 text-xs text-slate-500 dark:text-slate-400 leading-snug">
-                          {award.description}
+                          {award.id === 'award-10'
+                            ? 'Recognition for mentoring undergraduate students in research projects.'
+                            : award.description}
                         </p>
                       )}
                     </div>
