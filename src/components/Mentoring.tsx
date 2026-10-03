@@ -2,6 +2,26 @@ import React from 'react';
 import { Calendar } from 'lucide-react';
 import { MENTORED_STUDENTS_LIST, MENTORING_ACTIVITIES_LIST } from '../data/academicData';
 
+const affiliationAbbreviations: Record<string, string> = {
+  'Kansas State University': 'K-State',
+  'University of California, Santa Cruz': 'UCSC',
+  'Southern Connecticut State University': 'SCSU',
+  'Colorado School of Mines': 'Mines',
+};
+
+const formatStudentWithAffiliation = (studentName: string, affiliation: string) => {
+  const affiliations = affiliation.split(';').map(item => item.trim());
+  const abbreviations = affiliations.map(item => affiliationAbbreviations[item] ?? item);
+  const names = studentName.replace(', and ', ', ').split(', ').map(item => item.trim());
+
+  if (names.length === abbreviations.length && names.length > 1) {
+    const labels = names.map((name, index) => `${name} (${abbreviations[index]})`);
+    return `${labels.slice(0, -1).join(', ')}, and ${labels[labels.length - 1]}`;
+  }
+
+  return `${studentName} (${abbreviations.join(', ')})`;
+};
+
 export const Mentoring: React.FC = () => {
   const serviceGroups = [
     'Organizer',
@@ -33,12 +53,12 @@ export const Mentoring: React.FC = () => {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
                     <div className="min-w-0">
-                      <h4 className="text-sm sm:text-base font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
-                        {student.studentName}
+                      <h4
+                        className="text-sm sm:text-base font-semibold text-slate-900 dark:text-slate-100 font-serif-academic"
+                        title={student.affiliation}
+                      >
+                        {formatStudentWithAffiliation(student.studentName, student.affiliation)}
                       </h4>
-                      <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
-                        {student.affiliation}
-                      </p>
                     </div>
                     <span className="inline-flex items-center gap-2 flex-shrink-0 text-sm text-slate-500 dark:text-slate-400">
                       <Calendar className="w-4 h-4" aria-hidden="true" />
