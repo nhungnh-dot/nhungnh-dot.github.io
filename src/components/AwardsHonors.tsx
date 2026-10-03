@@ -34,11 +34,13 @@ export const AwardsHonors: React.FC = () => {
                       <p className="text-sm sm:text-base font-medium text-slate-900 dark:text-slate-100 font-serif-academic leading-snug">
                         {award.title}
                       </p>
-                      {award.description && (
+                      {(award.description || award.id === 'award-4') && (
                         <p className="mt-0 text-xs text-slate-500 dark:text-slate-400 leading-snug">
-                          {award.id === 'award-10'
-                            ? 'Recognition for mentoring undergraduate students in research projects.'
-                            : award.description}
+                          {award.id === 'award-4'
+                            ? 'Scholarship awarded in recognition of leadership and service in organizing and leading Qualifying Exam I review sessions for graduate students.'
+                            : award.id === 'award-10'
+                              ? 'Recognition for mentoring undergraduate students in research projects.'
+                              : award.description}
                         </p>
                       )}
                     </div>
