@@ -9,6 +9,11 @@ const affiliationAbbreviations: Record<string, string> = {
   'Colorado School of Mines': 'Mines',
 };
 
+const serviceDescriptionAbbreviations: Record<string, string> = {
+  'Kansas State University': 'K-State',
+  'Manhattan, Kansas': 'Manhattan, KS',
+};
+
 const formatStudentWithAffiliation = (studentName: string, affiliation: string) => {
   const affiliations = affiliation.split(';').map(item => item.trim());
   const abbreviations = affiliations.map(item => affiliationAbbreviations[item] ?? item);
@@ -110,7 +115,7 @@ export const Mentoring: React.FC = () => {
                           </p>
                           {activity.description && (
                             <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                              {activity.description}
+                              {serviceDescriptionAbbreviations[activity.description] ?? activity.description}
                             </p>
                           )}
                         </div>
