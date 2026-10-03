@@ -8,6 +8,16 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = () => {
+  const researchInterests = PERSONAL_INFO.researchKeywords.flatMap(keyword => {
+    if (keyword === 'Inverse Problems') {
+      return ['Inverse Problems', 'Inverse Scattering'];
+    }
+    if (keyword === 'Partial Differential Equations') {
+      return ['Scientific Computing'];
+    }
+    return [keyword];
+  });
+
   return (
     <section id="about" className="py-8 sm:py-10 border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -59,7 +69,7 @@ export const Hero: React.FC<HeroProps> = () => {
 
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
               <span className="font-semibold text-slate-700 dark:text-slate-300">Research interests:</span>{' '}
-              {PERSONAL_INFO.researchKeywords.join(' · ')}
+              {researchInterests.join(' · ')}
             </p>
 
             <div className="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-2 text-sm">
