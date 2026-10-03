@@ -8,15 +8,15 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = () => {
-  const researchInterests = PERSONAL_INFO.researchKeywords.flatMap(keyword => {
-    if (keyword === 'Inverse Problems') {
-      return ['Inverse Problems', 'Inverse Scattering'];
-    }
-    if (keyword === 'Partial Differential Equations') {
-      return ['Scientific Computing'];
-    }
-    return [keyword];
-  });
+  const researchInterests = [
+    'Inverse Problems',
+    'Inverse Scattering',
+    'Computational Imaging',
+    'Scientific Computing',
+    'Physics-Informed Neural Networks (PINNs)',
+    'Machine Learning',
+    'AI',
+  ];
 
   return (
     <section id="about" className="py-8 sm:py-10 border-b border-slate-200 dark:border-slate-800">
