@@ -3,7 +3,17 @@ import { Calendar } from 'lucide-react';
 import { AWARDS_HONORS_LIST } from '../data/academicData';
 
 export const AwardsHonors: React.FC = () => {
-  const institutions = [...new Set(AWARDS_HONORS_LIST.map(award => award.institution))];
+  const hiddenAwardIds = new Set([
+    'award-2',
+    'award-3',
+    'award-5',
+    'award-6',
+    'award-8',
+    'award-9',
+  ]);
+
+  const visibleAwards = AWARDS_HONORS_LIST.filter(award => !hiddenAwardIds.has(award.id));
+  const institutions = [...new Set(visibleAwards.map(award => award.institution))];
 
   return (
     <section id="awards" className="py-8 sm:py-10">
@@ -15,7 +25,7 @@ export const AwardsHonors: React.FC = () => {
                 {institution}
               </h2>
               <ul className="space-y-3">
-                {AWARDS_HONORS_LIST.filter(award => award.institution === institution).map(award => (
+                {visibleAwards.filter(award => award.institution === institution).map(award => (
                   <li
                     key={award.id}
                     className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4"
