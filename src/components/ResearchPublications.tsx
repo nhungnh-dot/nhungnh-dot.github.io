@@ -9,14 +9,14 @@ interface ResearchProps {
 
 const modalImagingPublication: Publication = {
   id: 'pub-6',
-  title: 'Modal imaging of periodic elastic structures',
+  title: 'A modal compressional-shear weighted imaging function for inverse elastic scattering by penetrable periodic structures',
   authors: ['Shumaila Ambreen', 'Dinh-Liem Nguyen', 'Nhung H. Nguyen'],
   venue: 'Submitted',
   year: '',
   status: 'submitted',
   tags: [],
   bibtex: `@unpublished{ambreenModalImaging,
-  title={Modal imaging of periodic elastic structures},
+  title={A modal compressional-shear weighted imaging function for inverse elastic scattering by penetrable periodic structures},
   author={Ambreen, Shumaila and Nguyen, Dinh-Liem and Nguyen, Nhung H.},
   note={Submitted}
 }`
