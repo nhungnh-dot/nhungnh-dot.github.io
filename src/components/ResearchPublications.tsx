@@ -7,6 +7,21 @@ interface ResearchProps {
   onOpenBibtex?: (pub: Publication) => void;
 }
 
+const modalImagingPublication: Publication = {
+  id: 'pub-6',
+  title: 'Modal imaging of periodic elastic structures',
+  authors: ['Shumaila Ambreen', 'Dinh-Liem Nguyen', 'Nhung H. Nguyen'],
+  venue: 'Submitted',
+  year: '',
+  status: 'submitted',
+  tags: [],
+  bibtex: `@unpublished{ambreenModalImaging,
+  title={Modal imaging of periodic elastic structures},
+  author={Ambreen, Shumaila and Nguyen, Dinh-Liem and Nguyen, Nhung H.},
+  note={Submitted}
+}`
+};
+
 export const ResearchPublications: React.FC<ResearchProps> = () => (
   <section id="research" className="pt-8 pb-5 sm:pt-10 sm:pb-6">
     <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -20,7 +35,7 @@ export const ResearchPublications: React.FC<ResearchProps> = () => (
       </div>
 
       <ol className="space-y-3 sm:space-y-3.5 list-none">
-        {PUBLICATIONS_LIST.map((pub, index) => (
+        {[modalImagingPublication, ...PUBLICATIONS_LIST].map((pub, index) => (
           <li
             key={pub.id}
             id={`publication-${pub.id}`}
