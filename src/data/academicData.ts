@@ -16,7 +16,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://www.linkedin.com/in/nhung-nguyen-802846373/",
   github: "https://github.com/nhungnh-dot",
   originalWebsite: "https://nhungnh-dot.github.io/nhungnh/index.html",
-  profileImage: `${import.meta.env.BASE_URL}profile-image.png?v=20261031`,
+  profileImage: `${import.meta.env.BASE_URL}profile-image.png?v=20261031-2`,
   logoImage: `${import.meta.env.BASE_URL}logo.png`,
   bio: "Welcome to my homepage! I am a PhD Candidate in Mathematics at Kansas State University, working under the supervision of Prof. Dinh-Liem Nguyen. My research focuses on computational inverse problems, imaging, inverse scattering, and source reconstruction.",
   researchSummary: "My research centers on inverse scattering and source reconstruction for partial differential equations. I am interested in the integration of artificial intelligence and machine learning techniques into scientific computing.",
