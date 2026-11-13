@@ -614,17 +614,9 @@ export const TEACHING_LIST: CourseTeaching[] = [
 
 export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
   {
-    id: "ment-7",
-    studentName: "Riyad Raef",
-    affiliation: "Manhattan High School",
-    program: "Co-mentor, undergraduate research project",
-    term: "Fall 2026",
-    projects: ["A model-informed neural network approach to inverse source identification"]
-  },
-  {
     id: "ment-5",
-    studentName: "Noah Kelemen",
-    affiliation: "Kansas State University",
+    studentName: "Noah Kelemen, and Riyad Raef",
+    affiliation: "Kansas State University; Manhattan High School",
     program: "Co-mentor, undergraduate research project",
     term: "Fall 2026",
     projects: ["A model-informed neural network approach to inverse source identification"]
