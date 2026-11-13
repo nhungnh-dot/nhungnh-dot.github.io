@@ -324,7 +324,7 @@ export const TALKS_LIST: Talk[] = [
     title: "Contributed Talk",
     event: "Heartland Math Conference 2026",
     date: "Oct 3 – 4, 2026",
-    location: "Kansas State University",
+    location: "Kansas State University, Kansas",
     type: "contributed",
     format: "in-person"
   },
