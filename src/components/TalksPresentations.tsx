@@ -4,16 +4,6 @@ import { TALKS_LIST } from '../data/academicData';
 import { Talk } from '../types';
 
 export const TalksPresentations: React.FC = () => {
-  const heartlandTalk: Talk = {
-    id: 'talk-con-heartland-2026',
-    title: 'Contributed Talk',
-    event: 'Heartland Math Conference 2026',
-    date: 'Oct 3 – 4, 2026',
-    location: 'Kansas State University',
-    type: 'contributed',
-    format: 'in-person',
-  };
-
   const groups = [
     {
       id: 'invited',
@@ -23,7 +13,7 @@ export const TalksPresentations: React.FC = () => {
     {
       id: 'contributed',
       title: 'Contributed Talks',
-      talks: [heartlandTalk, ...TALKS_LIST.filter(t => t.type === 'contributed')],
+      talks: TALKS_LIST.filter(t => t.type === 'contributed'),
     },
     {
       id: 'poster',
