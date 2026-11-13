@@ -77,15 +77,8 @@ export const EducationEmployment: React.FC = () => {
           </ul>
         </section>
 
-        <section className="mt-8" aria-labelledby="development-heading">
-          <h2 id="development-heading" className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
-            Summer Schools & Workshops
-          </h2>
-          <p className="mt-4 text-base font-semibold">{PROFESSIONAL_DEVELOPMENT.summerSchool.title}</p>
-          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-            {PROFESSIONAL_DEVELOPMENT.summerSchool.institution} · {PROFESSIONAL_DEVELOPMENT.summerSchool.year}
-          </p>
-          <h3 className="mt-6 text-lg font-semibold font-serif-academic">Certificates</h3>
+        <section className="mt-8" aria-labelledby="certificates-heading">
+          <h2 id="certificates-heading" className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">Certificates</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-400">
             {PROFESSIONAL_DEVELOPMENT.certificates.map((certificate) => (
               <li key={certificate.title}>{certificate.title} · {certificate.issuer} · {certificate.year}</li>
