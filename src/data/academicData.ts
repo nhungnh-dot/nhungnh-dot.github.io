@@ -36,15 +36,16 @@ export const EDUCATION_LIST: EducationItem[] = [
     degree: "Ph.D. in Mathematics",
     institution: "Kansas State University",
     location: "Manhattan, Kansas, USA",
-    period: "2024 – Present (Expected Summer 2028)",
+    period: "2024 – 2028 (expected)",
     link: "https://www.math.ksu.edu/"
   },
   {
     id: "hcmue-bs",
-    degree: "B.S. in Mathematics",
+    degree: "B.S. in Mathematics, minor in Education",
     institution: "Ho Chi Minh City University of Education",
     location: "Ho Chi Minh City, Viet Nam",
-    period: "Graduated Spring 2023",
+    period: "2019 – 2023",
+    details: "Graduated with an excellent degree (top 5%). Thesis: Calderón-Zygmund-type estimates for gradient of weak solution and associated pressure of Stokes systems (supervisor: Prof. Thanh-Nhan Nguyen).",
     link: "https://hcmue.edu.vn/vi/khoa-bo-mon/khoa-toan-tin"
   }
 ];
@@ -52,21 +53,25 @@ export const EDUCATION_LIST: EducationItem[] = [
 export const EMPLOYMENT_DATA = [
   {
     title: "Graduate Research Assistant",
+    semesters: ["Spring 2025", "Fall 2026"],
     type: "Research",
     description: "Conducting research on inverse scattering, spectral neural networks, as well as exploring applications of machine learning and artificial intelligence in education."
   },
   {
     title: "NSF REU Graduate Assistant",
+    semesters: ["Summer 2025"],
     type: "Mentoring & Research",
     description: "Assisting faculty and co-mentoring undergraduate cohorts in the Summer Undergraduate Mathematics Research (SUMaR) REU program."
   },
   {
     title: "Graduate Organizational Assistant",
+    semesters: ["Fall 2025", "Spring – Fall 2026"],
     type: "Administration & Service",
     description: "Departmental academic coordination, colloquium/seminar event support, and recruitment initiatives."
   },
   {
     title: "Graduate Teaching Assistant",
+    semesters: ["Spring – Fall 2024", "Summer – Fall 2025", "Spring – Summer 2026"],
     type: "Teaching",
     description: "Serving as primary lecturer, recitation leader, and lab instructor across calculus, differential equations, and linear algebra courses."
   }
@@ -163,6 +168,20 @@ export const AWARDS_HONORS_LIST: AwardHonor[] = [
 
 export const PUBLICATIONS_LIST: Publication[] = [
   {
+    id: "pub-6",
+    title: "A modal compressional-shear weighted imaging function for inverse elastic scattering by penetrable periodic structures",
+    authors: ["Shumaila Ambreen", "Dinh-Liem Nguyen", "Nhung H. Nguyen"],
+    venue: "Submitted",
+    year: "",
+    status: "submitted",
+    tags: [],
+    bibtex: `@unpublished{ambreenmodal,
+  title={A modal compressional-shear weighted imaging function for inverse elastic scattering by penetrable periodic structures},
+  author={Ambreen, Shumaila and Nguyen, Dinh-Liem and Nguyen, Nhung H.},
+  note={Submitted}
+}`
+  },
+  {
     id: "pub-4",
     title: "A model-informed deep learning algorithm for solving the phaseless inverse scattering problem",
     authors: ["Dinh-Liem Nguyen", "Nhung H. Nguyen", "Aravinth Ravi"],
@@ -252,6 +271,16 @@ export const PUBLICATIONS_LIST: Publication[] = [
 export const TALKS_LIST: Talk[] = [
   // Invited Talks
   {
+    id: "talk-inv-4",
+    title: "Invited Talk",
+    event: "New York-New Jersey-Pennsylvania Section of SIAM Annual Meeting 2026",
+    date: "Oct 23 – 25, 2026",
+    location: "Rutgers University, New Jersey",
+    type: "invited",
+    session: "Minisymposium",
+    format: "in-person"
+  },
+  {
     id: "talk-inv-1",
     title: "Invited Talk",
     event: "New York-New Jersey-Pennsylvania Section of SIAM Annual Meeting 2025",
@@ -281,6 +310,24 @@ export const TALKS_LIST: Talk[] = [
     format: "in-person"
   },
   // Contributed Talks
+  {
+    id: "talk-con-8",
+    title: "Contributed Talk",
+    event: "Central States Section of SIAM Annual Meeting 2026",
+    date: "Oct 10 – 11, 2026",
+    location: "Jackson State University, Mississippi",
+    type: "contributed",
+    format: "in-person"
+  },
+  {
+    id: "talk-con-9",
+    title: "Contributed Talk",
+    event: "Heartland Math Conference 2026",
+    date: "Oct 3 – 4, 2026",
+    location: "Kansas State University",
+    type: "contributed",
+    format: "in-person"
+  },
   {
     id: "talk-con-1",
     title: "Contributed Talk",
@@ -345,6 +392,15 @@ export const TALKS_LIST: Talk[] = [
     format: "in-person"
   },
   // Poster Presentations
+  {
+    id: "talk-pos-3",
+    title: "Poster Presentation",
+    event: "Prairie Analysis Seminar 2026",
+    date: "Oct 30 – 31, 2026",
+    location: "University of Kansas, Kansas",
+    type: "poster",
+    format: "in-person"
+  },
   {
     id: "talk-pos-1",
     title: "Poster Presentation",
@@ -558,6 +614,14 @@ export const TEACHING_LIST: CourseTeaching[] = [
 
 export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
   {
+    id: "ment-7",
+    studentName: "Riyad Raef",
+    affiliation: "Manhattan High School",
+    program: "Co-mentor, undergraduate research project",
+    term: "Fall 2026",
+    projects: ["A model-informed neural network approach to inverse source identification"]
+  },
+  {
     id: "ment-5",
     studentName: "Noah Kelemen",
     affiliation: "Kansas State University",
@@ -609,10 +673,17 @@ export const MENTORED_STUDENTS_LIST: MentoredStudent[] = [
 
 export const MENTORING_ACTIVITIES_LIST: MentoringActivity[] = [
   {
+    id: "act-16",
+    title: "Mathematics Modeling Section at K-State’s Annual Education Day Game",
+    role: "Assistant",
+    term: "Fall 2026",
+    description: "Manhattan, Kansas"
+  },
+  {
     id: "act-4",
     title: "Sonia Kovalevsky Day: Workshops for Middle School Students",
     role: "Organizer",
-    term: "Spring 2025; Spring 2026",
+    term: "Spring 2025; Spring 2026; Spring 2027",
     description: "Kansas State University"
   },
   {
@@ -638,9 +709,9 @@ export const MENTORING_ACTIVITIES_LIST: MentoringActivity[] = [
   },
   {
     id: "act-8",
-    title: "2026 AMS Graduate School Fair at the Joint Mathematics Meetings",
+    title: "AMS Graduate School Fair at the Joint Mathematics Meetings",
     role: "Graduate Student Representative",
-    term: "Spring 2026"
+    term: "Spring 2026; Spring 2027"
   },
   {
     id: "act-9",
@@ -694,3 +765,20 @@ export const MENTORING_ACTIVITIES_LIST: MentoringActivity[] = [
     term: "Summer 2024; Summer 2025"
   }
 ];
+
+export const PROFESSIONAL_DEVELOPMENT = {
+  summerSchool: {
+    title: "John Tukey Summer Graduate School: Mathematics of Generative Models",
+    institution: "Simons Laufer Mathematical Sciences Institute, Berkeley, California",
+    year: "2026"
+  },
+  certificates: [
+    { title: "Google Advanced Data Analytics Professional", issuer: "Google", year: "2026" },
+    { title: "Google Data Analytics Professional", issuer: "Google", year: "2026" },
+    { title: "Google AI Specialization", issuer: "Google", year: "2026" },
+    { title: "Google AI Essentials Specialization", issuer: "Google", year: "2026" },
+    { title: "Machine Learning Specialization", issuer: "Stanford University and DeepLearning.AI", year: "2026" }
+  ],
+  languages: "Vietnamese (native speaker); English (fluent)",
+  technicalSkills: "MATLAB; Python; Structured Query Language (SQL); Tableau"
+};

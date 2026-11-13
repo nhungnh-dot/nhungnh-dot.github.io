@@ -62,7 +62,7 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
               {PERSONAL_INFO.name}
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1">
-              Ph.D. Student in Mathematics · Kansas State University
+              {PERSONAL_INFO.title} · {PERSONAL_INFO.institution}
             </p>
 
             <div className="mt-2.5 flex flex-wrap items-center justify-center sm:justify-start gap-y-1 gap-x-4 text-xs text-slate-600 dark:text-slate-400">

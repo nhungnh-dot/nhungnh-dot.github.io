@@ -1,6 +1,6 @@
 import React from 'react';
 import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
-import { EDUCATION_LIST, EMPLOYMENT_DATA } from '../data/academicData';
+import { EDUCATION_LIST, EMPLOYMENT_DATA, PROFESSIONAL_DEVELOPMENT } from '../data/academicData';
 
 export const EducationEmployment: React.FC = () => {
   return (
@@ -68,12 +68,32 @@ export const EducationEmployment: React.FC = () => {
                 <p className="text-base font-semibold text-slate-900 dark:text-slate-100">
                   {job.title}
                 </p>
+                <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">{job.semesters.join('; ')}</p>
                 <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                   {job.description}
                 </p>
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="mt-8" aria-labelledby="development-heading">
+          <h2 id="development-heading" className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 font-serif-academic">
+            Summer Schools & Workshops
+          </h2>
+          <p className="mt-4 text-base font-semibold">{PROFESSIONAL_DEVELOPMENT.summerSchool.title}</p>
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+            {PROFESSIONAL_DEVELOPMENT.summerSchool.institution} · {PROFESSIONAL_DEVELOPMENT.summerSchool.year}
+          </p>
+          <h3 className="mt-6 text-lg font-semibold font-serif-academic">Certificates</h3>
+          <ul className="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-400">
+            {PROFESSIONAL_DEVELOPMENT.certificates.map((certificate) => (
+              <li key={certificate.title}>{certificate.title} · {certificate.issuer} · {certificate.year}</li>
+            ))}
+          </ul>
+          <h3 className="mt-6 text-lg font-semibold font-serif-academic">Skills</h3>
+          <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">Languages: {PROFESSIONAL_DEVELOPMENT.languages}</p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Technical skills: {PROFESSIONAL_DEVELOPMENT.technicalSkills}</p>
         </section>
       </div>
     </section>
