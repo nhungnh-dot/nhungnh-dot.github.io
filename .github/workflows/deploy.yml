@@ -1,4 +1,5 @@
 name: Deploy website to GitHub Pages
+# Fresh deployment trigger after a transient Pages artifact lookup failure.
 
 on:
   push:
