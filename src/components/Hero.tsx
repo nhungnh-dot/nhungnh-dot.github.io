@@ -73,30 +73,24 @@ export const Hero: React.FC<HeroProps> = () => {
             </p>
 
             <div className="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-2 text-sm">
-              <a
-                href={`mailto:${PERSONAL_INFO.email}`}
-                className="font-medium text-indigo-700 dark:text-indigo-300 hover:underline"
-              >
-                {PERSONAL_INFO.email}
-              </a>
-              <a
-                href={PERSONAL_INFO.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 font-medium text-indigo-700 dark:text-indigo-300 hover:underline"
-              >
-                LinkedIn
-                <ExternalLink className="w-3 h-3" />
-              </a>
-              <a
-                href="https://scholar.google.com/citations?hl=en&user=mjpMbqoAAAAJ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 font-medium text-indigo-700 dark:text-indigo-300 hover:underline"
-              >
-                Google Scholar
-                <ExternalLink className="w-3 h-3" />
-              </a>
+              {[
+                { label: PERSONAL_INFO.email, href: `mailto:${PERSONAL_INFO.email}`, external: false },
+                { label: 'LinkedIn', href: PERSONAL_INFO.linkedin, external: true },
+                { label: 'Google Scholar', href: 'https://scholar.google.com/citations?hl=en&user=mjpMbqoAAAAJ', external: true },
+                { label: 'GitHub', href: PERSONAL_INFO.github, external: true },
+                { label: 'CV', href: `${import.meta.env.BASE_URL}CV.pdf`, external: true },
+              ].map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.external ? '_blank' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
+                  className="inline-flex items-center gap-1 font-medium text-indigo-700 dark:text-indigo-300 hover:underline"
+                >
+                  {link.label}
+                  {link.external && <ExternalLink className="w-3 h-3" aria-hidden="true" />}
+                </a>
+              ))}
             </div>
           </div>
         </div>
