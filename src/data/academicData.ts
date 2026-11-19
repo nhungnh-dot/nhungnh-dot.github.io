@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
   office: "Cardwell Hall, Manhattan, KS 66506",
   email: "nhungnh@ksu.edu",
   altEmail: "nhungnh2102@gmail.com",
-  linkedin: "https://www.linkedin.com/in/nhung-nguyen-802846373/",
+  linkedin: "https://www.linkedin.com/in/nhung-h-nguyen-802846373/",
   github: "https://github.com/nhungnh-dot",
   originalWebsite: "https://nhungnh-dot.github.io/nhungnh/index.html",
   profileImage: `${import.meta.env.BASE_URL}profile-image.png?v=20261101`,
